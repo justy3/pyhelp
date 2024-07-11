@@ -5,6 +5,7 @@ df = pd.DataFrame({'ric': ['ric1', 'ric2', 'ric3'],
                     'qty': [27, 21, 21],
                     'date': ['d1', 'd2', 'd2']}) 
 
+df = df.groupby(['ric', 'date', 'strat'])['qty'].sum().reset_index()
 df.reset_index(inplace=True)
 
 dates = df['date'].drop_duplicates().tolist()
@@ -25,6 +26,6 @@ for i in range(len(df_list)-1):
 df_sorted = df_res.copy()
 for date in dates:
 	df_sorted[date] = df_sorted[date].sort_values(by='ric').reset_index(drop=True)
-df_sorted.fillna("")
+df_sorted.fillna("") 
 
 print(df_sorted)
