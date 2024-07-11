@@ -23,6 +23,8 @@ for i in range(len(df_list)-1):
     df_res = pd.concat([df_res, df_list[i+1]], axis=0, ignore_index=True)
 # df_res.fillna("")
 df_sorted = df_res.copy()
-df_sorted['d1'] = df_sorted['d1'].sort_values(by='ric').reset_index(drop=True)
-df_sorted['d2'] = df_sorted['d2'].sort_values(by='ric').reset_index(drop=True)
+for date in dates:
+	df_sorted[date] = df_sorted[date].sort_values(by='ric').reset_index(drop=True)
 df_sorted.fillna("")
+
+print(df_sorted)
