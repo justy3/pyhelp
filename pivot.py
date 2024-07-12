@@ -8,11 +8,12 @@ symbols = ['RELIANCE', 'TCS', 'INFY', 'HDFCBANK', 'ICICIBANK']
 strategies = ['Strategy_A', 'Strategy_B', 'Strategy_C', 'Strategy_D', 'Strategy_E']
 
 # Generate sample data
+n = 1000
 data = {
-    'ric': np.random.choice(symbols, 100),
-    'date': [datetime.now() - timedelta(days=random.randint(0, 6)) for _ in range(100)],
-    'strategy': np.random.choice(strategies, 100),
-    'qty': np.random.randint(1, 1000, 100)
+    'ric': np.random.choice(symbols, n),
+    'date': [datetime.now() - timedelta(days=random.randint(0, 13)) for _ in range(n)],
+    'strategy': np.random.choice(strategies, n),
+    'qty': np.random.randint(1, 1000, n)
 }
 
 # Create DataFrame
