@@ -47,10 +47,57 @@ for date in dates:
 df_sorted = df_sorted.dropna(axis = 0, how = 'all')
 df_sorted = df_sorted.fillna("") 
 
-print(df_sorted)
 
 
 
 # Puts the scrollbar next to the DataFrame
 from IPython.display import display, HTML
-display(HTML( "<div style='height: 200px; overflow: auto; width: fit-content'>" + df_sorted.to_html() + "</div>"))
+from IPython.core.display import HTML
+
+# Convert DataFrame to HTML
+html = df_sorted.to_html()
+
+# Create HTML with CSS for scrollable table
+scrollable_html = f"""
+<style>
+    .scrollable-table {{
+        max-height: 400px;
+        overflow-y: scroll;
+        display: block;
+    }}
+    table {{
+        width: 100%;
+        border-collapse: collapse;
+    }}
+    th, td {{
+        border: 1px solid black;
+        padding: 5px;
+        text-align: left;
+    }}
+</style>
+<div class="scrollable-table">
+    {html}
+</div>
+"""
+
+# save to a html file
+with open('scrollable_table.html', 'w') as f:
+    f.write(scrollable_html)
+
+'''
+open this file in browser
+'''
+
+
+# Display the HTML
+# HTML(scrollable_html)
+
+
+# print("sending email")
+# import win32com.client as win32
+# outlook = win32.Dispatch('outlook.application')
+# mail = outlook.cCreateIem(0)
+# mail.To = "saurabhiitd3@gmail.com"
+# mail.Subject = "testing report"
+# mail.HTMLBody = HTML( "<div style='height: 200px; overflow: auto; width: fit-content'>" + df_sorted.to_html() + "</div>")
+# mail.Send()
