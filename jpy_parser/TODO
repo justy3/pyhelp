@@ -1,0 +1,46 @@
+1. TICKER_ID
+ticker identifier : E04583   -> EDINET submitted documents...
+
+2. SUBMISSION_DATE
+[Submitted on] July 12, 2024
+
+3. REPORTING_PERIOD_START/REPORTING_PERIOD_END
+[Reporting period] From June 1, 2024 to June 30, 2024
+
+4. COMPANY_NAME
+[Company name] Toho Co., Ltd.
+
+5. TREASURY_STOCK_DISPOSED_TOTAL_COUNT/TREASURY_STOCK_DISPOSED_TOTAL_CURRENCY
+Other (disposal of treasury stock under the restricted stock compensation plan) June 21
+Total - 21,668 106,043,192
+Total 21,668 106,043,192
+
+6. APPROVED_BUYBACK_SHARES/APPROVED_BUYBACK_SHARES_YEN
+ACQUISITION_PERIOD
+Resolution status at the board of directors meeting (May 14, 2024) 30,000,000 250,000,000,000
+(Acquisition period: May 15, 2024 to May 14, 2025) (Upper limit) (Upper limit)
+
+7. ACQUIRE_DATE/COUNT_TREASURY_STOCK/YEN_TREASURY_STOCK
+Acquired treasury stock in the reporting month (acquisition date)
+June 3rd 137,000 561,318,000
+June 4th 138,000 565,468,600
+June 5th 138,300 565,957,500
+June 6th 139,000 568,160,100
+June 7th 136,700 561,094,400
+June 10th 132,100 552,824,000
+June 11th 128,100 549,343,900
+June 12th 123,000 535,906,300
+June 13th 120,000 529,350,000
+June 14th 113,200 505,009,900
+June 17th 117,700 520,514,400
+June 18th 115,500 512,828,200
+June 19th 113,800 511,062,900
+June 20th 114,700 512,110,600
+June 21st 113,500 510,207,200
+Total - 1,880,600 8,061,156,000
+
+DATA CHECK -> (check that Total is valid)
+
+8. ISSUED_SHARES_TOTAL/TREASURE_STOCKS_HELD
+Total number of issued shares   186,490,633
+Number of treasury shares held  15,553,997
