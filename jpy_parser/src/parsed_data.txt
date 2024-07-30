@@ -1,0 +1,66 @@
+path				:	/home/kumarsau/private/capula/pyhelp/jpy_parser/data/S100TZQ3.pdf
+pdf_name			:	S100TZQ3.pdf
+ticker_id			:	E0458
+submission_date			:	july 12, 2024
+reporting_period		:	('june1,2024', 'june30,2024')
+company_name			:	toho co., ltd.
+treasury_stocks_disposed	:	(21668, 106043192)
+buyback_stocks_approved		:	(None, None)
+shares_issued_and_held		:	(186490633, 15553997)
+treasury_stock_by_day		:	{}
+
+path				:	/home/kumarsau/private/capula/pyhelp/jpy_parser/data/S100U0Q8.pdf
+pdf_name			:	S100U0Q8.pdf
+ticker_id			:	E0216
+submission_date			:	july 12, 2024
+reporting_period		:	('june1,2024', 'june30,2024')
+company_name			:	honda motor co., ltd.
+treasury_stocks_disposed	:	(None, None)
+buyback_stocks_approved		:	(180000000, 300000000000)
+shares_issued_and_held		:	(5280000000, None)
+treasury_stock_by_day		:	{}
+
+path				:	/home/kumarsau/private/capula/pyhelp/jpy_parser/data/S100U1SV.pdf
+pdf_name			:	S100U1SV.pdf
+ticker_id			:	E0069
+submission_date			:	july 12, 2024
+reporting_period		:	('june1,2024', 'june30,2024')
+company_name			:	toppan holdings inc.
+treasury_stocks_disposed	:	(None, None)
+buyback_stocks_approved		:	(39000000, 100000000000)
+shares_issued_and_held		:	(318706240, None)
+treasury_stock_by_day		:	{'june 3rd': ('137,000', '561,318,000'), 'june 4th': ('138,000', '565,468,600'), 'june 5th': ('138,300', '565,957,500'), 'june 6th': ('139,000', '568,160,100'), 'june 7th': ('136,700', '561,094,400'), 'june 10th': ('132,100', '552,824,000'), 'june 11th': ('128,100', '549,343,900'), 'june 12th': ('123,000', '535,906,300'), 'june 13th': ('120,000', '529,350,000'), 'june 14th': ('113,200', '505,009,900'), 'june 17th': ('117,700', '520,514,400'), 'june 18th': ('115,500', '512,828,200'), 'june 19th': ('113,800', '511,062,900'), 'june 20th': ('114,700', '512,110,600'), 'june 21': ('113,500', '510,207,200'), 'total': (1880600, 8061156000)}
+
+path				:	/home/kumarsau/private/capula/pyhelp/jpy_parser/data/S100U200.pdf
+pdf_name			:	S100U200.pdf
+ticker_id			:	E0176
+submission_date			:	july 12, 2024
+reporting_period		:	('june1,2024', 'june30,2024')
+company_name			:	fujitsu limited
+treasury_stocks_disposed	:	(None, None)
+buyback_stocks_approved		:	(150000000, 180000000000)
+shares_issued_and_held		:	(2071108450, 231826140)
+treasury_stock_by_day		:	{}
+
+path				:	/home/kumarsau/private/capula/pyhelp/jpy_parser/data/S100U203.pdf
+pdf_name			:	S100U203.pdf
+ticker_id			:	E2706
+submission_date			:	july 12, 2024
+reporting_period		:	('june1,2024', 'june30,2024')
+company_name			:	ibj co., ltd.
+treasury_stocks_disposed	:	(None, None)
+buyback_stocks_approved		:	(500000, 300000000)
+shares_issued_and_held		:	(37789694, None)
+treasury_stock_by_day		:	{}
+
+path				:	/home/kumarsau/private/capula/pyhelp/jpy_parser/data/S100U204.pdf
+pdf_name			:	S100U204.pdf
+ticker_id			:	E0177
+submission_date			:	july 12, 2024
+reporting_period		:	('june1,2024', 'june30,2024')
+company_name			:	sony group corporation
+treasury_stocks_disposed	:	(None, None)
+buyback_stocks_approved		:	(None, None)
+shares_issued_and_held		:	(1248619589, None)
+treasury_stock_by_day		:	{'june 3rd': ('182,000', '2,384,749,003'), 'june 4th': ('230,000', '3,071,962,501'), 'june 5th': ('173,200', '2,324,481,503'), 'june 6th': ('259,500', '3,531,701,009'), 'june 7th': ('127,100', '1,703,856,996'), 'june 10th': ('107,200', '1,435,210,001'), 'june 11th': ('108,500', '1,447,076,500'), 'june 12th': ('143,800', '1,888,883,994'), 'june 13th': ('208', ',800'), 'june 14th': ('279,800', '3,659,761,504'), 'june 17th': ('163,300', '2,074,858,495'), 'june 18th': ('145,300', '1,839,290,497'), 'june 19th': ('158,000', '2,011,494,998'), 'june 20': ('101,800', '1,300,382,002'), 'june 21': ('292,400', '3,759,385,513'), 'total': (2680700, 35210255014)}
+

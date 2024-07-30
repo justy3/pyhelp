@@ -1,7 +1,27 @@
 import os
+import re
+import pprint
+import logging
 import pdfplumber
+import numpy as np
+import pandas as pd
 from pathlib import Path
 from deep_translator import GoogleTranslator
+
+'''
+LOGGER
+'''
+# Set up the basic configuration for logging
+logging.basicConfig(level=logging.INFO,
+					format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+					handlers=[
+						logging.FileHandler("example.log"),
+						logging.StreamHandler()
+					])
+
+# Create a logger
+logger = logging.getLogger(__name__)
+
 
 def extract_PDF_content(path):
 	content = ''
@@ -17,16 +37,16 @@ class JPY_shares:
 	
 	def __init__(self, path):
 		# save path and pdf_name
-		print(f"parsing pdf at : {path}")
+		logger.info(f"parsing pdf at : {path}")
 		self.path = path
 		self.pdf_name = os.path.basename(path)
 
 		# retrieve pdf text in Japanese
-		print(f"retrieve japenese text")
+		logger.info(f"retrieve japenese text")
 		self.original_text = extract_PDF_content(path)
 
 		# translate to English (requires Internet)
-		print("translating to english")
+		logger.info("translating to english")
 		self.en_translated = GoogleTranslator(source='auto', target='english').translate(self.original_text)
 		self.en_translated_lower = self.en_translated.lower()
 		self.en_lines = self.en_translated_lower.split("\n")
@@ -41,9 +61,31 @@ class JPY_shares:
 		self.shares_issued_and_held = None
 		self.treasury_stock_by_day = None
 
+		# fill all fields
+		self.get_ticker_id()
+		self.get_submission_date()
+		self.get_reporting_period()
+		self.get_company_name()
+		self.get_treasury_stocks_disposed()
+		self.get_approved_buyback_shares()
+		self.get_shares_issued_and_held()
+		self.get_count_treasury_stock()
+
 
 	def __str__(self):
-		return f"PATH : {self.path}, PDF_NAME : {self.pdf_name}"
+		fields = ["path", "pdf_name", "ticker_id", "submission_date", "reporting_period", "company_name", "treasury_stocks_disposed", "buyback_stocks_approved", "shares_issued_and_held", "treasury_stock_by_day"]
+		repr = ""
+		repr += f"path\t\t\t\t:\t{self.path}\n"
+		repr += f"pdf_name\t\t\t:\t{self.pdf_name}\n"
+		repr += f"ticker_id\t\t\t:\t{self.ticker_id}\n"
+		repr += f"submission_date\t\t\t:\t{self.submission_date}\n"
+		repr += f"reporting_period\t\t:\t{self.reporting_period}\n"
+		repr += f"company_name\t\t\t:\t{self.company_name}\n"
+		repr += f"treasury_stocks_disposed\t:\t{self.treasury_stocks_disposed}\n"
+		repr += f"buyback_stocks_approved\t\t:\t{self.buyback_stocks_approved}\n"
+		repr += f"shares_issued_and_held\t\t:\t{self.shares_issued_and_held}\n"
+		repr += f"treasury_stock_by_day\t\t:\t{self.treasury_stock_by_day}\n"
+		return repr
 
 	'''''
 	Functions to get each field
@@ -51,14 +93,14 @@ class JPY_shares:
 	'''''
 	def get_ticker_id(self):
 		text = self.en_translated
-		matches = re.findall(r'E\d{4}', " " + jpy1.en_translated + " ")
+		matches = re.findall(r'E\d{4}', " " + text + " ")
 		matches = list(set(matches))
 
 		ticker_id = None
 		if len(matches)==0:
-			logger.WARN("No match found for ticker id")
+			logger.warning("No match found for ticker id")
 		elif len(matches)>1:
-			logger.WARN("Multiple matches found")
+			logger.warning("Multiple matches found")
 			ticker_id = matches[0]
 		else:
 			ticker_id = matches[0]
@@ -66,10 +108,9 @@ class JPY_shares:
 		self.ticker_id = ticker_id
 
 	def get_submission_date(self):
-		submission_date = None
 		for line in self.en_lines:
 			if "submitted on" in line:
-				submission_date = line.replace("[submitted on] ", "")
+				self.submission_date = line.replace("[submitted on] ", "")
 				break
 
 
@@ -98,11 +139,11 @@ class JPY_shares:
 			line = en_lines[i+1]
 			if "total" in line:
 				shares_parsed = re.findall(r'[0-9][0-9,.]+', line)
-				print(line)
+				# print(line)
 				assert len(shares_parsed)==2, "expecting 2 numbers for disposed shares - No of stocks and stocks' value in Yen"
 				shares_disposed = (int(shares_parsed[0].replace(",", "")), int(shares_parsed[1].replace(",", "")))
 		except Exception as e:
-			print(f"couldnt fine disposed shares, error : {e}")
+			logger.warning(f"couldnt find disposed shares, error : {e}")
 		
 		self.treasury_stocks_disposed = shares_disposed
 
@@ -126,10 +167,10 @@ class JPY_shares:
 			assert len(shares_parsed)==2, "expecting 2 numbers for buyback shares - No of stocks and stocks' value in Yen"
 			shares_approved_for_buyback = (int(shares_parsed[0].replace(",", "")), int(shares_parsed[1].replace(",", "")))
 		except Exception as e:
-			print(f"couldnt fine issued shares, error : {e}")
+			logger.warning(f"couldnt find approved buyback shares, error : {e}")
 
 		# return
-		return shares_approved_for_buyback
+		self.buyback_stocks_approved = shares_approved_for_buyback
 
 
 	def get_shares_issued_and_held(self):
@@ -142,7 +183,7 @@ class JPY_shares:
 					shares_issued = int(re.findall(r'[0-9][0-9,.]+', line)[0].replace(",", ""))
 					break
 		except Exception as e:
-			print(f"couldnt fine issued shares, error : {e}")
+			logger.warning(f"couldnt find issued shares, error : {e}")
 
 		shares_held = None
 		try:
@@ -151,11 +192,10 @@ class JPY_shares:
 					shares_held = int(re.findall(r'[0-9][0-9,.]+', line)[0].replace(",", ""))
 					break
 		except Exception as e:
-			print(f"couldnt fine shares held, error : {e}")
+			logger.warning(f"couldnt find shares held, error : {e}")
 		
 		# return
-		self.
-		return (shares_issued, shares_held)
+		self.shares_issued_and_held = (shares_issued, shares_held)
 				
 
 	def get_count_treasury_stock(self):
@@ -202,9 +242,19 @@ class JPY_shares:
 
 				# cross check if the total matches the 
 		except Exception as e:
-			print(f"couldnt find treasury stocks, error : {e}")
+			logger.warning(f"couldnt find treasury stocks, error : {e}")
 		
-		return acquired_treasury_stock_dict
+		self.treasury_stock_by_day = acquired_treasury_stock_dict
 
 # EXAMPLE
-jpy1 = JPY_shares("/home/kumarsau/private/capula/pyhelp/jpy_parser/data/S100TZQ3.pdf")
+mypath = os.getcwd()
+pdffiles = [f for f in os.listdir(mypath+"/../data/") if f[-1]=="f"]
+
+jpy_parsed = []
+for pdf in pdffiles:
+	jpy = JPY_shares("/home/kumarsau/private/capula/pyhelp/jpy_parser/data/" + pdf)
+	# print(jpy)
+	jpy_parsed.append(jpy)
+
+for parsed_data in jpy_parsed:
+	print(parsed_data)
