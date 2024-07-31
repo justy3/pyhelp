@@ -15,13 +15,19 @@ LOGGER
 logging.basicConfig(level=logging.INFO,
 					format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
 					handlers=[
-						logging.FileHandler("example.log"),
 						logging.StreamHandler()
 					])
 
 # Create a logger
 logger = logging.getLogger(__name__)
 
+def pattern_in_line(list_of_text, line):
+	found = False
+	for text in list_of_text:
+		if text in line:
+			found = True
+			break
+	return found
 
 def extract_PDF_content(path):
 	content = ''
@@ -60,6 +66,17 @@ class JPY_shares:
 		self.buyback_stocks_approved = None
 		self.shares_issued_and_held = None
 		self.treasury_stock_by_day = None
+		self.parsed_fields = [	"path",
+								"pdf_name",
+								"ticker_id",
+								"submission_date",
+								"reporting_period",
+								"company_name",
+								"treasury_stocks_disposed",
+								"buyback_stocks_approved",
+								"shares_issued_and_held",
+								"treasury_stock_by_day"
+								]
 
 		# fill all fields
 		self.get_ticker_id()
@@ -71,9 +88,12 @@ class JPY_shares:
 		self.get_shares_issued_and_held()
 		self.get_count_treasury_stock()
 
+		# get dataframe
+		self.dataframe = None
+		self.parsed_fields_to_df()
+
 
 	def __str__(self):
-		fields = ["path", "pdf_name", "ticker_id", "submission_date", "reporting_period", "company_name", "treasury_stocks_disposed", "buyback_stocks_approved", "shares_issued_and_held", "treasury_stock_by_day"]
 		repr = ""
 		repr += f"path\t\t\t\t:\t{self.path}\n"
 		repr += f"pdf_name\t\t\t:\t{self.pdf_name}\n"
@@ -93,7 +113,7 @@ class JPY_shares:
 	'''''
 	def get_ticker_id(self):
 		text = self.en_translated
-		matches = re.findall(r'E\d{4}', " " + text + " ")
+		matches = re.findall(r'E\d{5}', " " + text + " ")
 		matches = list(set(matches))
 
 		ticker_id = None
@@ -118,7 +138,7 @@ class JPY_shares:
 		for line in self.en_lines:
 			if "reporting period" in line:
 				dates = line.replace("[reporting period] ", "").replace("from", "").replace("to", "").strip().split(" ")
-				self.reporting_period = (dates[0]+dates[1]+dates[2], dates[4]+dates[5]+dates[6])
+				self.reporting_period = (dates[0] + " " + dates[1] + " " + dates[2], dates[4] + " " + dates[5] + " " + dates[6])
 				break
 
 
@@ -134,7 +154,8 @@ class JPY_shares:
 		try:
 			for i in range(len(en_lines)):
 				line = en_lines[i]
-				if "disposal of treasury stock" in line:
+				list_of_keywords = ["disposal of treasury stock", "disposal of treasury stocks", "disposal of treasury share", "disposal of treasury shares"]
+				if pattern_in_line(list_of_keywords, line):
 					break
 			line = en_lines[i+1]
 			if "total" in line:
@@ -179,7 +200,8 @@ class JPY_shares:
 		shares_issued = None
 		try:
 			for line in en_lines:
-				if "issued shares" in line:
+				list_of_keywords = ["issued shares", "issued share", "issued stock", "issued stocks"]
+				if pattern_in_line(list_of_keywords, line):
 					shares_issued = int(re.findall(r'[0-9][0-9,.]+', line)[0].replace(",", ""))
 					break
 		except Exception as e:
@@ -188,7 +210,8 @@ class JPY_shares:
 		shares_held = None
 		try:
 			for line in en_lines:
-				if "shares held" in line:
+				list_of_keywords = ["shares held", "share held", "stocks held", "stock held"]
+				if pattern_in_line(list_of_keywords, line): 
 					shares_held = int(re.findall(r'[0-9][0-9,.]+', line)[0].replace(",", ""))
 					break
 		except Exception as e:
@@ -206,7 +229,8 @@ class JPY_shares:
 		try:
 			for i in range(len(en_lines)):
 				line = en_lines[i]
-				if "treasury stock in the reporting month" in line:
+				list_of_keywords = ["treasury shares in the reporting month", "treasury share in the reporting month", "treasury stock in the reporting month", "treasury stocks in the reporting month"]
+				if pattern_in_line(list_of_keywords, line):
 					break
 			
 			monthly_reports = []
@@ -245,16 +269,24 @@ class JPY_shares:
 			logger.warning(f"couldnt find treasury stocks, error : {e}")
 		
 		self.treasury_stock_by_day = acquired_treasury_stock_dict
+	
+	def parsed_fields_to_df(self):
+		df_dict = {}
+		for k in self.parsed_fields:
+			df_dict[k] = [self.__dict__[k]]
+		self.dataframe = pd.DataFrame(df_dict)
 
 # EXAMPLE
 mypath = os.getcwd()
 pdffiles = [f for f in os.listdir(mypath+"/../data/") if f[-1]=="f"]
 
 jpy_parsed = []
+jpy_parsed_df = []
 for pdf in pdffiles:
 	jpy = JPY_shares("/home/kumarsau/private/capula/pyhelp/jpy_parser/data/" + pdf)
-	# print(jpy)
 	jpy_parsed.append(jpy)
+	jpy_parsed_df.append(jpy.dataframe)
+	# print(jpy.dataframe)
 
-for parsed_data in jpy_parsed:
-	print(parsed_data)
+df = pd.concat(jpy_parsed_df)
+print(df)
