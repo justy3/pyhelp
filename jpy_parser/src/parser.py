@@ -276,17 +276,19 @@ class JPY_shares:
 			df_dict[k] = [self.__dict__[k]]
 		self.dataframe = pd.DataFrame(df_dict)
 
-# EXAMPLE
-mypath = os.getcwd()
-pdffiles = [f for f in os.listdir(mypath+"/../data/") if f[-1]=="f"]
+if __name__=="__main__":
+	# EXAMPLE
+	mypath = os.getcwd()
+	pdffiles = [f for f in os.listdir(mypath+"/../data/") if f[-1]=="f"]
 
-jpy_parsed = []
-jpy_parsed_df = []
-for pdf in pdffiles:
-	jpy = JPY_shares("/home/kumarsau/private/capula/pyhelp/jpy_parser/data/" + pdf)
-	jpy_parsed.append(jpy)
-	jpy_parsed_df.append(jpy.dataframe)
-	# print(jpy.dataframe)
+	jpy_parsed = []
+	jpy_parsed_df = []
+	for pdf in pdffiles:
+		jpy = JPY_shares("/home/kumarsau/private/capula/pyhelp/jpy_parser/data/" + pdf)
+		jpy_parsed.append(jpy)
+		jpy_parsed_df.append(jpy.dataframe)
+		# print(jpy.dataframe)
 
-df = pd.concat(jpy_parsed_df)
-print(df)
+	df = pd.concat(jpy_parsed_df)
+	df.set_index(['pdf_name', 'submission_date'], inplace=True)
+	print(df)
