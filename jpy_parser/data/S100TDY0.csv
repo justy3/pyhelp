@@ -1,2 +1,2 @@
-,pdf_name,ticker_id,submission_date,reporting_period_start,reporting_period_end,company_name,disposed_treasury_stocks,disposed_treasury_stocks_yen,approved_buyback_stocks,approved_buyback_stocks_yen,shares_issued,shares_held,reporting_period_date,treasury_stock,treasury_stock_yen,disposed_stock,disposed_stock_yen
-0,S100TDY0.pdf,E05041,2024-05-14,2024-04-01,2024-04-30,"gmo internet group, inc.",,,1100000,2410000000,109176555,3015085,,,,,
+,pdf_name,ticker_id,submission_date,reporting_period_start,reporting_period_end,company_name,shares_issued,shares_held,reporting_period_date,treasury_stock,treasury_stock_yen,disposed_stock,disposed_stock_yen
+0,S100TDY0.pdf,E05041,2024-05-14,2024-04-01,2024-04-30,"gmo internet group, inc.",109176555,3015085,,,,,
