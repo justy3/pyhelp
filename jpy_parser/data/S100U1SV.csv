@@ -1,16 +1,16 @@
-,pdf_name,ticker_id,submission_date,reporting_period_start,reporting_period_end,company_name,disposed_treasury_stocks,disposed_treasury_stocks_yen,approved_buyback_stocks,approved_buyback_stocks_yen,shares_issued,shares_held,disposed_stock_by_day,reporting_period_date,treasury_stock,treasury_stock_yen
-0,S100U1SV.pdf,E00692,2024-07-12,2024-06-01,2024-06-30,toppan holdings inc.,,,39000000.0,100000000000.0,318706240.0,5749547.0,{},june 3,137000,561318000
-1,,,,,,,,,,,,,,june 4,138000,565468600
-2,,,,,,,,,,,,,,june 5,138300,565957500
-3,,,,,,,,,,,,,,june 6,139000,568160100
-4,,,,,,,,,,,,,,june 7,136700,561094400
-5,,,,,,,,,,,,,,june 10,132100,552824000
-6,,,,,,,,,,,,,,june 11,128100,549343900
-7,,,,,,,,,,,,,,june 12,123000,535906300
-8,,,,,,,,,,,,,,june 13,120000,529350000
-9,,,,,,,,,,,,,,june 14,113200,505009900
-10,,,,,,,,,,,,,,june 17,117700,520514400
-11,,,,,,,,,,,,,,june 18,115500,512828200
-12,,,,,,,,,,,,,,june 19,113800,511062900
-13,,,,,,,,,,,,,,june 20,114700,512110600
-14,,,,,,,,,,,,,,june 21,113500,510207200
+,pdf_name,ticker_id,submission_date,reporting_period_start,reporting_period_end,company_name,disposed_treasury_stocks,disposed_treasury_stocks_yen,approved_buyback_stocks,approved_buyback_stocks_yen,shares_issued,shares_held,reporting_period_date,treasury_stock,treasury_stock_yen,disposed_stock,disposed_stock_yen
+0,S100U1SV.pdf,E00692,2024-07-12,2024-06-01,2024-06-30,toppan holdings inc.,,,39000000.0,100000000000.0,318706240.0,5749547.0,june 4,138000,565468600,,
+1,,,,,,,,,,,,,june 10,132100,552824000,,
+2,,,,,,,,,,,,,june 20,114700,512110600,,
+3,,,,,,,,,,,,,june 19,113800,511062900,,
+4,,,,,,,,,,,,,june 21,113500,510207200,,
+5,,,,,,,,,,,,,june 17,117700,520514400,,
+6,,,,,,,,,,,,,june 6,139000,568160100,,
+7,,,,,,,,,,,,,june 18,115500,512828200,,
+8,,,,,,,,,,,,,june 11,128100,549343900,,
+9,,,,,,,,,,,,,june 3,137000,561318000,,
+10,,,,,,,,,,,,,june 14,113200,505009900,,
+11,,,,,,,,,,,,,june 13,120000,529350000,,
+12,,,,,,,,,,,,,june 5,138300,565957500,,
+13,,,,,,,,,,,,,june 12,123000,535906300,,
+14,,,,,,,,,,,,,june 7,136700,561094400,,
