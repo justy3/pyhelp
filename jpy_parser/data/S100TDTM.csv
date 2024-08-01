@@ -1,0 +1,4 @@
+,pdf_name,ticker_id,submission_date,reporting_period_start,reporting_period_end,company_name,disposed_treasury_stocks,disposed_treasury_stocks_yen,approved_buyback_stocks,approved_buyback_stocks_yen,shares_issued,shares_held,disposed_stock_by_day,reporting_period_date,treasury_stock,treasury_stock_yen
+0,S100TDTM.pdf,E24453,2024-05-14,2024-04-01,2024-04-30,"papyless co., ltd.",,,500000.0,700000000.0,,352117.0,{},april 4,4000,3624400
+1,,,,,,,,,,,,,,april 5,1900,1721800
+2,,,,,,,,,,,,,,april 8,1000,907100

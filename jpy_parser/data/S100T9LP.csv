@@ -1,0 +1,7 @@
+,pdf_name,ticker_id,submission_date,reporting_period_start,reporting_period_end,company_name,disposed_treasury_stocks,disposed_treasury_stocks_yen,approved_buyback_stocks,approved_buyback_stocks_yen,shares_issued,shares_held,disposed_stock_by_day,reporting_period_date,treasury_stock,treasury_stock_yen
+0,S100T9LP.pdf,E03752,2024-05-14,2024-04-01,2024-04-30,"nomura holdings, inc.",,,,,3163562601.0,228605254.0,"{'april 1': (56900, 4615900), 'april 2': (18400, 6737400), 'april 3': (12000, 7875000), 'april 5': (2000, 1257000), 'april 8': (22000, 594000), 'april 10': (23700, 3327700), 'april 11': (88700, 3170700), 'april 12': (3100, 3100), 'april 15': (80100, 1335100), 'april 16': (9900, 9900), 'april 17': (25500, 3679500), 'april 18': (15600, 587600), 'april 19': (15, 700), 'april 22': (4000, 2625000), 'april 23': (3000, 1830000), 'april 24': (3000, 1941000), 'april 25': (13000, 8670000), 'april 26': (2000, 1368000), 'april 30': (5000, 3087000)}",april 1,2132900,2025390360
+1,,,,,,,,,,,,,,april 2,1814500,1689792890
+2,,,,,,,,,,,,,,april 3,1940000,1796747180
+3,,,,,,,,,,,,,,april 4,1380000,1308573790
+4,,,,,,,,,,,,,,april 5,2132900,1964391750
+5,,,,,,,,,,,,,,april 8,1934500,1833830250
