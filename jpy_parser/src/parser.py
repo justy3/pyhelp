@@ -6,6 +6,7 @@ import pdfplumber
 import numpy as np
 import pandas as pd
 from pathlib import Path
+from datetime import datetime
 from deep_translator import GoogleTranslator
 
 '''
@@ -60,22 +61,31 @@ class JPY_shares:
 		# populate fields with dummy values
 		self.ticker_id = None
 		self.submission_date = None
-		self.reporting_period = None
+		self.reporting_period_start = None
+		self.reporting_period_end = None
 		self.company_name = None
-		self.treasury_stocks_disposed = None
-		self.buyback_stocks_approved = None
-		self.shares_issued_and_held = None
-		self.treasury_stock_by_day = None
-		self.parsed_fields = [	"path",
+		self.disposed_treasury_stocks = None
+		self.disposed_treasury_stocks_yen = None
+		self.approved_buyback_stocks = None
+		self.approved_buyback_stocks_yen = None
+		self.shares_issued = None
+		self.shares_held = None
+		self.acquired_treasury_stock_by_day = None
+		self.parsed_fields = [	
 								"pdf_name",
 								"ticker_id",
 								"submission_date",
-								"reporting_period",
+								"reporting_period_start",
+								"reporting_period_end",
 								"company_name",
-								"treasury_stocks_disposed",
-								"buyback_stocks_approved",
-								"shares_issued_and_held",
-								"treasury_stock_by_day"
+								"disposed_treasury_stocks",
+								"disposed_treasury_stocks_yen",
+								"approved_buyback_stocks",
+								"approved_buyback_stocks_yen",
+								"shares_issued",
+								"shares_held",
+								"acquired_treasury_stock_by_day",
+								"disposed_stock_by_day"
 								]
 
 		# fill all fields
@@ -87,6 +97,7 @@ class JPY_shares:
 		self.get_approved_buyback_shares()
 		self.get_shares_issued_and_held()
 		self.get_count_treasury_stock()
+		self.get_count_disposed_stock()
 
 		# get dataframe
 		self.dataframe = None
@@ -99,13 +110,16 @@ class JPY_shares:
 		repr += f"pdf_name\t\t\t:\t{self.pdf_name}\n"
 		repr += f"ticker_id\t\t\t:\t{self.ticker_id}\n"
 		repr += f"submission_date\t\t\t:\t{self.submission_date}\n"
-		repr += f"reporting_period\t\t:\t{self.reporting_period}\n"
+		repr += f"reporting_period\t\t:\t{self.reporting_period_start} to {self.reporting_period_end}\n"
 		repr += f"company_name\t\t\t:\t{self.company_name}\n"
-		repr += f"treasury_stocks_disposed\t:\t{self.treasury_stocks_disposed}\n"
-		repr += f"buyback_stocks_approved\t\t:\t{self.buyback_stocks_approved}\n"
-		repr += f"shares_issued_and_held\t\t:\t{self.shares_issued_and_held}\n"
-		repr += f"treasury_stock_by_day\t\t:\t{self.treasury_stock_by_day}\n"
+		repr += f"disposed_treasury_stocks\t:\t({self.disposed_treasury_stocks}, {self.disposed_treasury_stocks_yen})\n"
+		repr += f"approved_buyback_stocks\t\t:\t({self.approved_buyback_stocks}, {self.approved_buyback_stocks_yen})\n"
+		repr += f"shares_issued_and_held\t\t:\t({self.shares_issued}, {self.shares_held})\n"
+		repr += f"acquired_treasury_stock_by_day\t\t:\t{self.acquired_treasury_stock_by_day}\n"
 		return repr
+
+	def show_df(self):
+		print(df.fillna(""))
 
 	'''''
 	Functions to get each field
@@ -130,7 +144,8 @@ class JPY_shares:
 	def get_submission_date(self):
 		for line in self.en_lines:
 			if "submitted on" in line:
-				self.submission_date = line.replace("[submitted on] ", "")
+				sub_date = line.replace("[submitted on] ", "")
+				self.submission_date = datetime.strptime(sub_date, "%B %d, %Y").date()
 				break
 
 
@@ -138,7 +153,10 @@ class JPY_shares:
 		for line in self.en_lines:
 			if "reporting period" in line:
 				dates = line.replace("[reporting period] ", "").replace("from", "").replace("to", "").strip().split(" ")
-				self.reporting_period = (dates[0] + " " + dates[1] + " " + dates[2], dates[4] + " " + dates[5] + " " + dates[6])
+				sub_date_start = dates[0] + " " + dates[1] + " " + dates[2]
+				self.reporting_period_start = datetime.strptime(sub_date_start, "%B %d, %Y").date()
+				sub_date_end = dates[4] + " " + dates[5] + " " + dates[6]
+				self.reporting_period_end = datetime.strptime(sub_date_end, "%B %d, %Y").date()
 				break
 
 
@@ -166,7 +184,8 @@ class JPY_shares:
 		except Exception as e:
 			logger.warning(f"couldnt find disposed shares, error : {e}")
 		
-		self.treasury_stocks_disposed = shares_disposed
+		self.disposed_treasury_stocks = shares_disposed[0]
+		self.disposed_treasury_stocks_yen = shares_disposed[1]
 
 
 	def get_approved_buyback_shares(self):
@@ -191,7 +210,8 @@ class JPY_shares:
 			logger.warning(f"couldnt find approved buyback shares, error : {e}")
 
 		# return
-		self.buyback_stocks_approved = shares_approved_for_buyback
+		self.approved_buyback_stocks = shares_approved_for_buyback[0]
+		self.approved_buyback_stocks_yen = shares_approved_for_buyback[1]
 
 
 	def get_shares_issued_and_held(self):
@@ -218,7 +238,8 @@ class JPY_shares:
 			logger.warning(f"couldnt find shares held, error : {e}")
 		
 		# return
-		self.shares_issued_and_held = (shares_issued, shares_held)
+		self.shares_issued = shares_issued
+		self.shares_held = shares_held
 				
 
 	def get_count_treasury_stock(self):
@@ -256,25 +277,99 @@ class JPY_shares:
 				i += 1
 
 			for dat in monthly_reports:
-				acquired_treasury_stock_dict[dat[0]+ " " + dat[1]] = (dat[2], dat[3]) # keep it generic string to check the date format across all documents
+				date_string = dat[0]+ " " + dat[1]
+				date_string = date_string.replace("st", "").replace("nd", "").replace("rd", "").replace("th", "")
+				# date = datetime.strptime(date_string, "%B %d").date()
+				# print(f"date_string = {date_string}, date = {date}")
+				acquired_treasury_stock_dict[date_string] = (int(dat[2].replace(",", "")), int(dat[3].replace(",", ""))) # keep it generic string to check the date format across all documents
 
 			if "total" in line:
 				shares_parsed = re.findall(r'[0-9][0-9,.]+', line)
 				assert len(shares_parsed)==2, "expecting 2 numbers for buyback shares - No of stocks and stocks' value in Yen"
 				total_treasury_stocks_acquired = (int(shares_parsed[0].replace(",", "")), int(shares_parsed[1].replace(",", "")))
-				acquired_treasury_stock_dict["total"] = total_treasury_stocks_acquired
+				# acquired_treasury_stock_dict["total"] = total_treasury_stocks_acquired
 
-				# cross check if the total matches the 
+				# TODO
+				# cross check if the total matches the sum of individual reportings
+
 		except Exception as e:
 			logger.warning(f"couldnt find treasury stocks, error : {e}")
 		
-		self.treasury_stock_by_day = acquired_treasury_stock_dict
+		self.acquired_treasury_stock_by_day = acquired_treasury_stock_dict
 	
+	def get_count_disposed_stock(self):
+		en_lines = self.en_lines
+		months = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]
+		disposed_stock_dict = {}
+
+		try:
+			for i in range(len(en_lines)):
+				line = en_lines[i]
+				list_of_keywords = ["exercise of shares acquisition rights", "exercise of share acquisition rights", "exercise of stock acquisition rights", "exercise of stocks acquisition rights"]
+				if pattern_in_line(list_of_keywords, line):
+					break
+			
+			monthly_reports = []
+			while i < len(en_lines):
+				line = en_lines[i]
+				if "total" in line:
+					break
+				# print(f"i = {i}")
+				# print(line)
+				line = line.strip().split(" ")
+				split_line = [x for x in line if x]
+				# print(split_line)
+				j = 0
+				while j < len(split_line):
+					# print(f"j = {j}")
+					if split_line[j] in months:
+						datum = split_line[j:j+4]
+						monthly_reports.append(datum)
+						# print(f"datum = {datum}")
+						j += 4
+					else:
+						j += 1
+				i += 1
+
+			for dat in monthly_reports:
+				date_string = dat[0]+ " " + dat[1]
+				date_string = date_string.replace("st", "").replace("nd", "").replace("rd", "").replace("th", "")
+				# date = datetime.strptime(date_string, "%B %d").date()
+				# print(f"date_string = {date_string}, date = {date}")
+				disposed_stock_dict[date_string] = (int(dat[2].replace(",", "")), int(dat[3].replace(",", ""))) # keep it generic string to check the date format across all documents
+
+			if "total" in line:
+				shares_parsed = re.findall(r'[0-9][0-9,.]+', line)
+				assert len(shares_parsed)==2, "expecting 2 numbers for buyback shares - No of stocks and stocks' value in Yen"
+				stocks_disposed = (int(shares_parsed[0].replace(",", "")), int(shares_parsed[1].replace(",", "")))
+				# disposed_stock_dict["total"] = stocks_disposed
+
+				# TODO
+				# cross check if the total matches the sum of individual reportings
+
+		except Exception as e:
+			logger.warning(f"couldnt find treasury stocks, error : {e}")
+
+		self.disposed_stock_by_day = disposed_stock_dict
+
 	def parsed_fields_to_df(self):
 		df_dict = {}
+
 		for k in self.parsed_fields:
-			df_dict[k] = [self.__dict__[k]]
-		self.dataframe = pd.DataFrame(df_dict)
+			if k!= "acquired_treasury_stock_by_day":
+				df_dict[k] = [self.__dict__[k]]
+
+		if len(self.acquired_treasury_stock_by_day) > 0:
+			df_dict['reporting_period_date'] = self.acquired_treasury_stock_by_day.keys()
+			df_dict['treasury_stock'] = [i[0] for i in self.acquired_treasury_stock_by_day.values()]
+			df_dict['treasury_stock_yen'] = [i[1] for i in self.acquired_treasury_stock_by_day.values()]
+		else:
+			df_dict['reporting_period_date'] = []
+			df_dict['treasury_stock'] = []
+			df_dict['treasury_stock_yen'] = []
+
+		self.dataframe = pd.DataFrame(dict([(key, pd.Series(value)) for key, value in df_dict.items()]))
+		self.dataframe.to_csv(self.path.replace("pdf", "csv"))
 
 if __name__=="__main__":
 	# EXAMPLE

@@ -1,0 +1,16 @@
+,pdf_name,ticker_id,submission_date,reporting_period_start,reporting_period_end,company_name,disposed_treasury_stocks,disposed_treasury_stocks_yen,approved_buyback_stocks,approved_buyback_stocks_yen,shares_issued,shares_held,disposed_stock_by_day,reporting_period_date,treasury_stock,treasury_stock_yen
+0,S100U204.pdf,E01777,2024-07-12,2024-06-01,2024-06-30,sony group corporation,,,,,1248619589.0,30868630.0,"{'june 4': (36200, 380183984), 'june 5': (700, 7351624), 'june 7': (3900, 40959048), 'june 12': (3900, 40959048), 'june 13': (56600, 594431312), 'june 17': (100, 1050232), 'june 18': (10000, 105023200), 'june 19': (100, 1050232)}",june 3,182000,2384749003
+1,,,,,,,,,,,,,,june 4,230000,3071962501
+2,,,,,,,,,,,,,,june 5,173200,2324481503
+3,,,,,,,,,,,,,,june 6,259500,3531701009
+4,,,,,,,,,,,,,,june 7,127100,1703856996
+5,,,,,,,,,,,,,,june 10,107200,1435210001
+6,,,,,,,,,,,,,,june 11,108500,1447076500
+7,,,,,,,,,,,,,,june 12,143800,1888883994
+8,,,,,,,,,,,,,,june 13,208,800
+9,,,,,,,,,,,,,,june 14,279800,3659761504
+10,,,,,,,,,,,,,,june 17,163300,2074858495
+11,,,,,,,,,,,,,,june 18,145300,1839290497
+12,,,,,,,,,,,,,,june 19,158000,2011494998
+13,,,,,,,,,,,,,,june 20,101800,1300382002
+14,,,,,,,,,,,,,,june 21,292400,3759385513
