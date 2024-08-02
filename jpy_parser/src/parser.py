@@ -78,10 +78,6 @@ class JPY_shares:
 								"reporting_period_start",
 								"reporting_period_end",
 								"company_name",
-								"disposed_treasury_stocks",
-								"disposed_treasury_stocks_yen",
-								"approved_buyback_stocks",
-								"approved_buyback_stocks_yen",
 								"shares_issued",
 								"shares_held",
 								"acquired_treasury_stock_by_day",
@@ -356,17 +352,38 @@ class JPY_shares:
 		df_dict = {}
 
 		for k in self.parsed_fields:
-			if k!= "acquired_treasury_stock_by_day":
+			if k not in ["acquired_treasury_stock_by_day", "disposed_stock_by_day"]:
 				df_dict[k] = [self.__dict__[k]]
 
-		if len(self.acquired_treasury_stock_by_day) > 0:
-			df_dict['reporting_period_date'] = self.acquired_treasury_stock_by_day.keys()
-			df_dict['treasury_stock'] = [i[0] for i in self.acquired_treasury_stock_by_day.values()]
-			df_dict['treasury_stock_yen'] = [i[1] for i in self.acquired_treasury_stock_by_day.values()]
-		else:
-			df_dict['reporting_period_date'] = []
-			df_dict['treasury_stock'] = []
-			df_dict['treasury_stock_yen'] = []
+		all_reporting_dates = []
+		all_reporting_dates = list(self.acquired_treasury_stock_by_day.keys()) + list(self.disposed_stock_by_day.keys())
+		all_reporting_dates = list(set(all_reporting_dates))
+
+		# fill following fields for reporting dates
+		treasury_stock, treasury_stock_yen = [], []
+		disposed_stock, disposed_stock_yen = [], []
+
+		for d in all_reporting_dates:
+			if d in self.acquired_treasury_stock_by_day.keys():
+				treasury_stock.append(self.acquired_treasury_stock_by_day[d][0])
+				treasury_stock_yen.append(self.acquired_treasury_stock_by_day[d][1])
+			else:
+				treasury_stock.append(None)
+				treasury_stock_yen.append(None)
+
+			if d in self.disposed_stock_by_day.keys():
+				disposed_stock.append(self.disposed_stock_by_day[d][0])
+				disposed_stock_yen.append(self.disposed_stock_by_day[d][1])
+			else:
+				disposed_stock.append(None)
+				disposed_stock_yen.append(None)
+
+		# fill dictionary fields for dataframe
+		df_dict['reporting_period_date'] = all_reporting_dates
+		df_dict['treasury_stock'] = treasury_stock
+		df_dict['treasury_stock_yen'] = treasury_stock_yen
+		df_dict['disposed_stock'] = disposed_stock
+		df_dict['disposed_stock_yen'] = disposed_stock_yen
 
 		self.dataframe = pd.DataFrame(dict([(key, pd.Series(value)) for key, value in df_dict.items()]))
 		self.dataframe.to_csv(self.path.replace("pdf", "csv"))
