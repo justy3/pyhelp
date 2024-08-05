@@ -1,4 +1,4 @@
-,pdf_name,ticker_id,submission_date,reporting_period_start,reporting_period_end,company_name,shares_issued,shares_held,reporting_period_date,treasury_stock,treasury_stock_yen,disposed_stock,disposed_stock_yen
-0,S100TDTM.pdf,E24453,2024-05-14,2024-04-01,2024-04-30,"papyless co., ltd.",,352117.0,april 4,4000,3624400,,
-1,,,,,,,,,april 5,1900,1721800,,
-2,,,,,,,,,april 8,1000,907100,,
+,pdf_name,ticker_id,submission_date,reporting_period_start,reporting_period_end,company_name,shares_issued,shares_held,total_treasury_stocks_acquired,total_treasury_stocks_acquired_yen,reporting_period_date,treasury_stock,treasury_stock_yen,disposed_stock,disposed_stock_yen
+0,S100TDTM.pdf,E24453,2024-05-14,2024-04-01,2024-04-30,"papyless co., ltd.",,352117.0,,,2024-04-04,4000,3624400,,
+1,,,,,,,,,,,2024-04-05,1900,1721800,,
+2,,,,,,,,,,,2024-04-08,1000,907100,,

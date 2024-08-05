@@ -1,2 +1,2 @@
-,pdf_name,ticker_id,submission_date,reporting_period_start,reporting_period_end,company_name,shares_issued,shares_held,reporting_period_date,treasury_stock,treasury_stock_yen,disposed_stock,disposed_stock_yen
-0,S100TCAP.pdf,E36431,2024-05-14,2024-04-01,2024-04-30,"baby calendar co., ltd.",,,,,,,
+,pdf_name,ticker_id,submission_date,reporting_period_start,reporting_period_end,company_name,shares_issued,shares_held,total_treasury_stocks_acquired,total_treasury_stocks_acquired_yen,reporting_period_date,treasury_stock,treasury_stock_yen,disposed_stock,disposed_stock_yen
+0,S100TCAP.pdf,E36431,2024-05-14,2024-04-01,2024-04-30,"baby calendar co., ltd.",,,,,,,,,

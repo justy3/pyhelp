@@ -1,7 +1,7 @@
-,pdf_name,ticker_id,submission_date,reporting_period_start,reporting_period_end,company_name,shares_issued,shares_held,reporting_period_date,treasury_stock,treasury_stock_yen,disposed_stock,disposed_stock_yen
-0,S100TE73.pdf,E01367,2024-05-14,2024-04-01,2024-04-30,"nhk spring co., ltd.",244066144.0,25324167.0,april 2,106900,156171300,,
-1,,,,,,,,,april 4,119700,179225948,,
-2,,,,,,,,,april 3,102400,150315048,,
-3,,,,,,,,,april 5,94800,141026300,,
-4,,,,,,,,,april 8,175000,265181700,,
-5,,,,,,,,,april 1,132400,194127806,,
+,pdf_name,ticker_id,submission_date,reporting_period_start,reporting_period_end,company_name,shares_issued,shares_held,total_treasury_stocks_acquired,total_treasury_stocks_acquired_yen,reporting_period_date,treasury_stock,treasury_stock_yen,disposed_stock,disposed_stock_yen
+0,S100TE73.pdf,E01367,2024-05-14,2024-04-01,2024-04-30,"nhk spring co., ltd.",244066144.0,25324167.0,,,2024-04-01,132400,194127806,,
+1,,,,,,,,,,,2024-04-02,106900,156171300,,
+2,,,,,,,,,,,2024-04-03,102400,150315048,,
+3,,,,,,,,,,,2024-04-04,119700,179225948,,
+4,,,,,,,,,,,2024-04-05,94800,141026300,,
+5,,,,,,,,,,,2024-04-08,175000,265181700,,

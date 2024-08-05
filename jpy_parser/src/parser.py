@@ -242,6 +242,7 @@ class JPY_shares:
 		en_lines = self.en_lines
 		months = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]
 		acquired_treasury_stock_dict = {}
+		total_treasury_stocks_acquired = (None, None)
 
 		try:
 			for i in range(len(en_lines)):
@@ -273,11 +274,11 @@ class JPY_shares:
 				i += 1
 
 			for dat in monthly_reports:
-				date_string = dat[0]+ " " + dat[1]
+				date_string = dat[0]+ " " + dat[1] + " " + str(self.submission_date.year)
 				date_string = date_string.replace("st", "").replace("nd", "").replace("rd", "").replace("th", "")
-				# date = datetime.strptime(date_string, "%B %d").date()
+				date = datetime.strptime(date_string, "%B %d %Y").date()
 				# print(f"date_string = {date_string}, date = {date}")
-				acquired_treasury_stock_dict[date_string] = (int(dat[2].replace(",", "")), int(dat[3].replace(",", ""))) # keep it generic string to check the date format across all documents
+				acquired_treasury_stock_dict[date] = (int(dat[2].replace(",", "")), int(dat[3].replace(",", ""))) # keep it generic string to check the date format across all documents
 
 			if "total" in line:
 				shares_parsed = re.findall(r'[0-9][0-9,.]+', line)
@@ -292,6 +293,7 @@ class JPY_shares:
 			logger.warning(f"couldnt find treasury stocks, error : {e}")
 		
 		self.acquired_treasury_stock_by_day = acquired_treasury_stock_dict
+		self.total_treasury_stocks_acquired = total_treasury_stocks_acquired
 	
 	def get_count_disposed_stock(self):
 		en_lines = self.en_lines
@@ -328,11 +330,11 @@ class JPY_shares:
 				i += 1
 
 			for dat in monthly_reports:
-				date_string = dat[0]+ " " + dat[1]
+				date_string = dat[0]+ " " + dat[1] + " " + str(self.submission_date.year)
 				date_string = date_string.replace("st", "").replace("nd", "").replace("rd", "").replace("th", "")
-				# date = datetime.strptime(date_string, "%B %d").date()
+				date = datetime.strptime(date_string, "%B %d %Y").date()
 				# print(f"date_string = {date_string}, date = {date}")
-				disposed_stock_dict[date_string] = (int(dat[2].replace(",", "")), int(dat[3].replace(",", ""))) # keep it generic string to check the date format across all documents
+				disposed_stock_dict[date] = (int(dat[2].replace(",", "")), int(dat[3].replace(",", ""))) # keep it generic string to check the date format across all documents
 
 			if "total" in line:
 				shares_parsed = re.findall(r'[0-9][0-9,.]+', line)
@@ -363,6 +365,7 @@ class JPY_shares:
 		treasury_stock, treasury_stock_yen = [], []
 		disposed_stock, disposed_stock_yen = [], []
 
+		all_reporting_dates.sort()
 		for d in all_reporting_dates:
 			if d in self.acquired_treasury_stock_by_day.keys():
 				treasury_stock.append(self.acquired_treasury_stock_by_day[d][0])
@@ -379,6 +382,8 @@ class JPY_shares:
 				disposed_stock_yen.append(None)
 
 		# fill dictionary fields for dataframe
+		df_dict['total_treasury_stocks_acquired'] = self.total_treasury_stocks_acquired[0]
+		df_dict['total_treasury_stocks_acquired_yen'] = self.total_treasury_stocks_acquired[1]
 		df_dict['reporting_period_date'] = all_reporting_dates
 		df_dict['treasury_stock'] = treasury_stock
 		df_dict['treasury_stock_yen'] = treasury_stock_yen
