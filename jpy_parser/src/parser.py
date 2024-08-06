@@ -55,6 +55,7 @@ class JPY_shares:
 		# translate to English (requires Internet)
 		logger.info("translating to english")
 		self.en_translated = GoogleTranslator(source='auto', target='english').translate(self.original_text)
+		self.en_translated = self.en_translated.replace('\u200b', '')
 		self.en_translated_lower = self.en_translated.lower()
 		self.en_lines = self.en_translated_lower.split("\n")
 
@@ -80,6 +81,8 @@ class JPY_shares:
 								"company_name",
 								"shares_issued",
 								"shares_held",
+								"approved_buyback_stocks",
+								"approved_buyback_stocks_yen",
 								"acquired_treasury_stock_by_day",
 								"disposed_stock_by_day"
 								]
@@ -90,6 +93,7 @@ class JPY_shares:
 		self.get_reporting_period()
 		self.get_company_name()
 		self.get_treasury_stocks_disposed()
+		self.get_cum_treasury_stock()
 		self.get_approved_buyback_shares()
 		self.get_shares_issued_and_held()
 		self.get_count_treasury_stock()
@@ -237,6 +241,27 @@ class JPY_shares:
 		self.shares_issued = shares_issued
 		self.shares_held = shares_held
 				
+	def get_cum_treasury_stock(self):
+		en_lines = self.en_lines
+		# text is self.en_lines
+		cum_stocks_acquired = (None, None)
+		try:
+			for i in range(len(en_lines)):
+				line = en_lines[i]
+				list_of_keywords = ["cumulative treasury stock acquired", "cumulative treasury stocks acquired", "cumulative treasury share acquired", "cumulative treasury shares acquired"]
+				if pattern_in_line(list_of_keywords, line):
+					break
+			shares_parsed = re.findall(r'[0-9][0-9,.]+', line)
+			assert 2==len(shares_parsed), f"cumulative treasury stocks not found in {i}th line, len(en_lines) = {len(en_lines)}"
+			if 2!=len(shares_parsed):
+				shares_parsed = re.findall(r'[0-9][0-9,.]+', en_lines[i+1])
+			cum_stocks_acquired = (float(shares_parsed[0].replace(",", "")), float(shares_parsed[1].replace(",", "")))
+
+		except Exception as e:
+			logger.warning(f"couldnt find cumulative stocks acquired, error : {e}")
+
+		# return
+		self.cumulative_treasury_stocks_acquired = cum_stocks_acquired
 
 	def get_count_treasury_stock(self):
 		en_lines = self.en_lines
@@ -254,8 +279,6 @@ class JPY_shares:
 			monthly_reports = []
 			while i < len(en_lines):
 				line = en_lines[i]
-				if "total" in line:
-					break
 				# print(f"i = {i}")
 				# print(line)
 				line = line.strip().split(" ")
@@ -271,6 +294,8 @@ class JPY_shares:
 						j += 4
 					else:
 						j += 1
+				if "total" in line:
+					break
 				i += 1
 
 			for dat in monthly_reports:
@@ -281,6 +306,8 @@ class JPY_shares:
 				acquired_treasury_stock_dict[date] = (int(dat[2].replace(",", "")), int(dat[3].replace(",", ""))) # keep it generic string to check the date format across all documents
 
 			if "total" in line:
+				total_idx = line.index("total")
+				line = " ".join(line[total_idx:])
 				shares_parsed = re.findall(r'[0-9][0-9,.]+', line)
 				assert len(shares_parsed)==2, "expecting 2 numbers for buyback shares - No of stocks and stocks' value in Yen"
 				total_treasury_stocks_acquired = (int(shares_parsed[0].replace(",", "")), int(shares_parsed[1].replace(",", "")))
@@ -384,6 +411,8 @@ class JPY_shares:
 		# fill dictionary fields for dataframe
 		df_dict['total_treasury_stocks_acquired'] = self.total_treasury_stocks_acquired[0]
 		df_dict['total_treasury_stocks_acquired_yen'] = self.total_treasury_stocks_acquired[1]
+		df_dict['cumulative_treasury_stocks_acquired'] = self.cumulative_treasury_stocks_acquired[0]
+		df_dict['cumulative_treasury_stocks_acquired_yen'] = self.cumulative_treasury_stocks_acquired[1]
 		df_dict['reporting_period_date'] = all_reporting_dates
 		df_dict['treasury_stock'] = treasury_stock
 		df_dict['treasury_stock_yen'] = treasury_stock_yen
