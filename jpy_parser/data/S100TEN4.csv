@@ -1,7 +1,7 @@
-,pdf_name,ticker_id,submission_date,reporting_period_start,reporting_period_end,company_name,shares_issued,shares_held,total_treasury_stocks_acquired,total_treasury_stocks_acquired_yen,reporting_period_date,treasury_stock,treasury_stock_yen,disposed_stock,disposed_stock_yen
-0,S100TEN4.pdf,E05484,2024-05-14,2024-04-01,2024-04-30,"zappallas co., ltd.",13651000.0,1634203.0,,,2024-04-01,3800,1873000,,
-1,,,,,,,,,,,2024-04-02,2200,1077800,,
-2,,,,,,,,,,,2024-04-03,2500,1240000,,
-3,,,,,,,,,,,2024-04-04,9500,4665800,,
-4,,,,,,,,,,,2024-04-05,800,396200,,
-5,,,,,,,,,,,2024-04-08,1400,692700,,
+,pdf_name,ticker_id,submission_date,reporting_period_start,reporting_period_end,company_name,shares_issued,shares_held,reporting_period_date,treasury_stock,treasury_stock_yen,disposed_stock,disposed_stock_yen,total_treasury_stocks_acquired,total_treasury_stocks_acquired_yen
+0,S100TEN4.pdf,E05484,2024-05-14,2024-04-01,2024-04-30,"zappallas co., ltd.",13651000.0,1634203.0,2024-04-01,3800,1873000,,,,
+1,,,,,,,,,2024-04-02,2200,1077800,,,,
+2,,,,,,,,,2024-04-03,2500,1240000,,,,
+3,,,,,,,,,2024-04-04,9500,4665800,,,,
+4,,,,,,,,,2024-04-05,800,396200,,,,
+5,,,,,,,,,2024-04-08,1400,692700,,,,
