@@ -395,7 +395,7 @@ class JPY_shares:
 
 if __name__=="__main__":
 	# EXAMPLE
-	mypath = "/home/kumarsau/private/capula/pyhelp/jpy_parser/data/"
+	mypath = "/home/kumarsau/private/capula/pyhelp/jpy_parser/temp_data/"
 	pdffiles = [f for f in os.listdir(mypath) if f[-1]=="f"]
 
 	jpy_parsed = []
