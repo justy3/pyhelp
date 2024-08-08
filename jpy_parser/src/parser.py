@@ -424,22 +424,12 @@ class JPY_shares:
 		df_dict['disposed_stock_yen'] = disposed_stock_yen
 
 		self.dataframe = pd.DataFrame(dict([(key, pd.Series(value)) for key, value in df_dict.items()]))
-		self.dataframe.to_csv(self.path.replace("pdf", "csv"))
+		import pdb; pdb.set_trace()
 
-if __name__=="__main__":
-	# EXAMPLE
-	mypath = "/home/justy/private/capula/pyhelp/jpy_parser/temp_data/"
-	pdffiles = [f for f in os.listdir(mypath) if f[-1]=="f"]
-	# pdffiles = ["S100T9LP.pdf"]
+		# save csv file
+		csv_dir = os.path.dirname(self.path) + "_csv/"
+		if not os.path.isdir(csv_dir):
+			os.mkdir(csv_dir)
 
-	jpy_parsed = []
-	jpy_parsed_df = []
-	for pdf in pdffiles:
-		jpy = JPY_shares(mypath + pdf)
-		jpy_parsed.append(jpy)
-		jpy_parsed_df.append(jpy.dataframe)
-		# print(jpy.dataframe)
-
-	df = pd.concat(jpy_parsed_df)
-	df.set_index(['pdf_name', 'submission_date'], inplace=True)
-	print(df)
+		csv_path = csv_dir + self.pdf_name.replace("pdf", "csv")
+		self.dataframe.to_csv(csv_path)
