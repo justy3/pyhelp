@@ -60,6 +60,7 @@ class JPY_shares:
 		self.en_lines = self.en_translated_lower.split("\n")
 
 		# for fixing the space in output from buggy translator module
+		self.lines_comma_replaced = re.sub("(\d) ,(\d)", r"\1,\2", self.en_translated_lower).split("\n")
 		self.lines_comma_replaced = re.sub("(\d), (\d)", r"\1,\2", self.en_translated_lower).split("\n")
 
 		# populate fields with dummy values
