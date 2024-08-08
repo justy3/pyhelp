@@ -424,11 +424,11 @@ class JPY_shares:
 		df_dict['disposed_stock_yen'] = disposed_stock_yen
 
 		self.dataframe = pd.DataFrame(dict([(key, pd.Series(value)) for key, value in df_dict.items()]))
-		import pdb; pdb.set_trace()
 
 		# save csv file
 		csv_dir = os.path.dirname(self.path) + "_csv/"
 		if not os.path.isdir(csv_dir):
+			logger.info(f"creating directory for csv files : {csv_dir}")
 			os.mkdir(csv_dir)
 
 		csv_path = csv_dir + self.pdf_name.replace("pdf", "csv")
