@@ -59,6 +59,9 @@ class JPY_shares:
 		self.en_translated_lower = self.en_translated.lower()
 		self.en_lines = self.en_translated_lower.split("\n")
 
+		# for fixing the space in output from buggy translator module
+		self.lines_comma_replaced = re.sub("(\d), (\d)", r"\1,\2", self.en_translated_lower).split("\n")
+
 		# populate fields with dummy values
 		self.ticker_id = None
 		self.submission_date = None
@@ -264,7 +267,7 @@ class JPY_shares:
 		self.cumulative_treasury_stocks_acquired = cum_stocks_acquired
 
 	def get_count_treasury_stock(self):
-		en_lines = self.en_lines
+		en_lines = self.lines_comma_replaced
 		months = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]
 		acquired_treasury_stock_dict = {}
 		total_treasury_stocks_acquired = (None, None)
@@ -318,12 +321,12 @@ class JPY_shares:
 
 		except Exception as e:
 			logger.warning(f"couldnt find treasury stocks, error : {e}")
-		
+
 		self.acquired_treasury_stock_by_day = acquired_treasury_stock_dict
 		self.total_treasury_stocks_acquired = total_treasury_stocks_acquired
 	
 	def get_count_disposed_stock(self):
-		en_lines = self.en_lines
+		en_lines = self.lines_comma_replaced
 		months = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]
 		disposed_stock_dict = {}
 
@@ -424,8 +427,9 @@ class JPY_shares:
 
 if __name__=="__main__":
 	# EXAMPLE
-	mypath = "/home/kumarsau/private/capula/pyhelp/jpy_parser/temp_data/"
+	mypath = "/home/justy/private/capula/pyhelp/jpy_parser/temp_data/"
 	pdffiles = [f for f in os.listdir(mypath) if f[-1]=="f"]
+	# pdffiles = ["S100T9LP.pdf"]
 
 	jpy_parsed = []
 	jpy_parsed_df = []
