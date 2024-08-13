@@ -286,9 +286,9 @@ class JPY_shares:
 		# issued shares
 		try:
 			logger.info(f"issued shares")
-			issued_shares = None
+			shares_issued = None
 			data_parsed = re.findall(r'issued shares[\s\n]+([0-9][0-9,.]+[0-9])', en_text)[0]
-			issued_shares = int(data_parsed.replace("," , ""))
+			shares_issued = int(data_parsed.replace("," , ""))
 
 		except Exception as e:
 			logger.warning(f"couldnt find issued shares, error : {e}")
@@ -305,7 +305,7 @@ class JPY_shares:
 			logger.warning(f"couldnt find shares held, error : {e}")
 
 		self.shares_held = shares_held
-		self.issued_shares = issued_shares
+		self.shares_issued = shares_issued
 
 
 	def parsed_fields_to_df(self):
