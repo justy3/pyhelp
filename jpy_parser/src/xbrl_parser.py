@@ -169,7 +169,7 @@ class JPY_shares:
 
 			for i in range(len(en_text_lines)):
 				line = en_text_lines[i]
-				if "status of resolution" in line:
+				if "resolution" in line:
 					data_parsed = re.findall(r'([0-9][0-9,.]+[0-9])[\s+]([0-9][0-9,.]+[0-9])', "\n".join(en_text_lines))[0]
 					resolution_status = (data_parsed[0], data_parsed[1])
 					break
