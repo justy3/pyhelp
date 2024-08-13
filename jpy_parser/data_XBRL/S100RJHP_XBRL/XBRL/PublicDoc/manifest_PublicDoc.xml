@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://disclosure.edinet-fsa.go.jp/2013/manifest">
+  <tocComposition>
+    <title xml:lang="ja">提出本文書</title>
+    <title xml:lang="en">Main Document</title>
+    <item ref="jpcrp170000" extrole="http://disclosure.edinet-fsa.go.jp/role/jpcrp-sbr/rol_CabinetOfficeOrdinanceOnDisclosureOfCorporateInformationEtcFormNo17ShareBuybackReport" in="presentation" />
+  </tocComposition>
+  <list>
+    <instance id="jpcrp170000" type="PublicDoc" preferredFilename="jpcrp170000-sbr-001_E04988-000_2023-08-07_01_2023-08-07.xbrl">
+      <ixbrl>0000000_header_jpcrp170000-sbr-001_E04988-000_2023-08-07_01_2023-08-07_ixbrl.htm</ixbrl>
+      <ixbrl>0100000_honbun_jpcrp170000-sbr-001_E04988-000_2023-08-07_01_2023-08-07_ixbrl.htm</ixbrl>
+    </instance>
+  </list>
+</manifest>

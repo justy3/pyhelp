@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+<!-- Edited with FutureStage XBRL Solution Library .NET 01-11 -->
+<schema xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:jpcrp170000-sbr_E22440-000="http://disclosure.edinet-fsa.go.jp/jpcrp170000/sbr/001/E22440-000/2023-08-07/01/2023-08-07" xmlns:xlink="http://www.w3.org/1999/xlink" elementFormDefault="qualified" targetNamespace="http://disclosure.edinet-fsa.go.jp/jpcrp170000/sbr/001/E22440-000/2023-08-07/01/2023-08-07" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp-sbr/2021-11-01/jpcrp-sbr_cor_2021-11-01.xsd" namespace="http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp-sbr/2021-11-01/jpcrp-sbr_cor" />
+  <import schemaLocation="http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp-sbr/2021-11-01/jpcrp-sbr_rt_2021-11-01.xsd" namespace="http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp-sbr/2021-11-01/jpcrp-sbr_rt" />
+  <import schemaLocation="http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/jpdei_cor_2013-08-31.xsd" namespace="http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/jpdei_cor" />
+  <import schemaLocation="http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/jpdei_rt_2013-08-31.xsd" namespace="http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/jpdei_rt" />
+  <annotation>
+    <appinfo>
+      <link:linkbaseRef xlink:type="simple" xlink:href="http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp-sbr/2021-11-01/label/jpcrp-sbr_2021-11-01_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp-sbr/2021-11-01/label/jpcrp-sbr_2021-11-01_lab-en.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp-sbr/2021-11-01/label/jpcrp-sbr_2021-11-01_gla.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/label/jpdei_2013-08-31_lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/label/jpdei_2013-08-31_lab-en.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/label/jpdei_2013-08-31_gla.xml" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/r/jpdei_000100-000_2013-08-31_def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="jpcrp170000-sbr-001_E22440-000_2023-08-07_01_2023-08-07_pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" />
+    </appinfo>
+  </annotation>
+</schema>
