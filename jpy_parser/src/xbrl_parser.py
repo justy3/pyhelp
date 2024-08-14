@@ -170,7 +170,7 @@ class JPY_shares:
 			for i in range(len(en_text_lines)):
 				line = en_text_lines[i]
 				if "resolution" in line:
-					data_parsed = re.findall(r'([0-9][0-9,.]+[0-9])[\s+]([0-9][0-9,.]+[0-9])', "\n".join(en_text_lines))[0]
+					data_parsed = re.findall(r'([0-9][0-9,.]*[0-9])[\s+]([0-9][0-9,.]*[0-9])', "\n".join(en_text_lines))[0]
 					resolution_status = (data_parsed[0], data_parsed[1])
 					break
 
@@ -190,7 +190,7 @@ class JPY_shares:
 				line = en_text_lines[i]
 
 				if "reporting month" in line:
-					data_parsed = re.findall(r'([\d]+月[\d]+日)[\s+]([0-9][0-9,.]+[0-9])[\s+]([0-9][0-9,.]+[0-9])', "\n".join(jp_text_lines))
+					data_parsed = re.findall(r'([\d]+月[\d]+日)[\s+]([0-9][0-9,.]*[0-9])[\s+]([0-9][0-9,.]*[0-9])', "\n".join(jp_text_lines))
 
 					for dat in data_parsed:
 						date_string = dat[0] + " " + str(self.submission_date.year)
@@ -212,7 +212,7 @@ class JPY_shares:
 			for i in range(len(en_text_lines)):
 				line = en_text_lines[i]
 				if "accumulate" in line or "cumulative" in line:
-					data_parsed = re.findall(r'([0-9][0-9,.]+[0-9])[\s+]([0-9][0-9,.]+[0-9])', "\n".join(en_text_lines[i:]))[0]
+					data_parsed = re.findall(r'([0-9][0-9,.]*[0-9])[\s+]([0-9][0-9,.]*[0-9])', "\n".join(en_text_lines[i:]))[0]
 					cumulative_shares_acquired = (data_parsed[0], data_parsed[1])
 					break
 
@@ -229,7 +229,7 @@ class JPY_shares:
 			for i in range(len(jp_text_lines)):
 				line = jp_text_lines[i]
 				if last_date in line:
-					data_parsed = re.findall(r'([0-9][0-9,.]+[0-9])[\s+]([0-9][0-9,.]+[0-9])', "\n".join(jp_text_lines[i:]))[1]
+					data_parsed = re.findall(r'([0-9][0-9,.]*[0-9])[\s+]([0-9][0-9,.]*[0-9])', "\n".join(jp_text_lines[i:]))[1]
 					total_shares_acquired = (data_parsed[0], data_parsed[1])
 					break
 
@@ -258,7 +258,7 @@ class JPY_shares:
 		try:
 			logger.info(f"getting disposed shares")
 			daily_data = dict()
-			data_parsed = re.findall(r'([\d]+月[\d]+日)[\s+]([0-9][0-9,.]+[0-9])[\s+]([0-9][0-9,.]+[0-9])', "\n".join(jp_text_lines))
+			data_parsed = re.findall(r'([\d]+月[\d]+日)[\s+]([0-9][0-9,.]*[0-9])[\s+]([0-9][0-9,.]*[0-9])', "\n".join(jp_text_lines))
 
 			for dat in data_parsed:
 				date_string = dat[0] + " " + str(self.submission_date.year)
@@ -285,7 +285,7 @@ class JPY_shares:
 		try:
 			logger.info(f"issued shares")
 			shares_issued = None
-			data_parsed = re.findall(r'issued shares[\s\n]+([0-9][0-9,.]+[0-9])', en_text)[0]
+			data_parsed = re.findall(r'issued shares[\s\n]+([0-9][0-9,.]*[0-9])', en_text)[0]
 			shares_issued = int(data_parsed.replace("," , ""))
 
 		except Exception as e:
@@ -296,7 +296,7 @@ class JPY_shares:
 		try:
 			logger.info(f"getting shares held")
 			shares_held = None
-			data_parsed = re.findall(r'shares held[\s\n]+([0-9][0-9,.]+[0-9])', en_text)[0]
+			data_parsed = re.findall(r'shares held[\s\n]+([0-9][0-9,.]*[0-9])', en_text)[0]
 			shares_held = int(data_parsed.replace("," , ""))
 
 		except Exception as e:
