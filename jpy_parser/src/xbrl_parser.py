@@ -96,7 +96,7 @@ class JPY_shares:
 		self.get_reporting_period()
 		self.get_company_name()
 		self.get_shareholder_meeting_acquisition_stocks()
-		self.get_directors_meeting_acquisition_stocks()
+		self.get_disposed_shares()
 		self.get_shares_issued_and_held()
 
 		# get dataframe
@@ -245,33 +245,31 @@ class JPY_shares:
 		self.total_shares_acquired_yen 		= total_shares_acquired[1]
 
 
-	def get_directors_meeting_acquisition_stocks(self):
-		pass
-		# parsed_dict = self.parsed_dictionary
-		# html_text = parsed_dict['xbrli:xbrl']["jpcrp-sbr_cor:AcquisitionsByResolutionOfBoardOfDirectorsMeetingTextBlock"]["#text"]
-		# soup = BeautifulSoup(html_text, 'lxml')
-		# jp_text = soup.text
-		# en_text = self.translator.translate(jp_text).lower()
-		# en_text_lines = list(filter(None, en_text.split("\n")))
+	def get_disposed_shares(self):
+		parsed_dict = self.parsed_dictionary
+		html_text = parsed_dict['xbrli:xbrl']["jpcrp-sbr_cor:DisposalsOfTreasurySharesTextBlock"]["#text"]
+		soup = BeautifulSoup(html_text, 'lxml')
+		jp_text = soup.text
+		jp_text_lines = list(filter(None, jp_text.split("\n")))
+		en_text = self.translator.translate(jp_text).lower()
+		en_text_lines = list(filter(None, en_text.split("\n")))
 
-		# # resolution status
-		# try:
-		# 	logger.info(f"getting resolution status")
-		# 	keywords = [["status"], "resolution", ["board", "boards"], ["directors", "director"], "meeting"] # status of resolution at the board of directors meeting
+		# resolution status
+		try:
+			logger.info(f"getting disposed shares")
+			daily_data = dict()
+			data_parsed = re.findall(r'([\d]+月[\d]+日)[\s+]([0-9][0-9,.]+[0-9])[\s+]([0-9][0-9,.]+[0-9])', "\n".join(jp_text_lines))
 
-		# 	resolution_status = []
+			for dat in data_parsed:
+				date_string = dat[0] + " " + str(self.submission_date.year)
+				date_string = date_string.translate(str.maketrans('０１２３４５６７８９', '0123456789'))
+				date = datetime.strptime(date_string, "%M月%d日  %Y").date()
+				daily_data[date] = (int(dat[1].replace(",", "")), int(dat[2].replace(",", "")))
 
-		# 	for i in range(len(en_text_lines)):
-		# 		line = en_text_lines[i]
-		# 		if "status of resolution" in line:
-		# 			data_parsed = re.findall(r'([0-9][0-9,.]+[0-9])[\s+]([0-9][0-9,.]+[0-9])', "\n".join(en_text_lines))[0]
-		# 			resolution_status = (data_parsed[0], data_parsed[1])
-		# 			break
+		except Exception as e:
+			logger.warning(f"couldnt find disposed shares, error : {e}")
 
-		# 	self.resolution_status = resolution_status
-
-		# except Exception as e:
-		# 	logger.warning(f"couldnt find resolution status, error : {e}")
+		self.disposed_shares_daily = daily_data
 
 
 
@@ -331,10 +329,10 @@ class JPY_shares:
 				acquired_share.append(None)
 				acquired_share_yen.append(None)
 
-			# if d in self.disposed_stock_by_day.keys():
-			if False:
-				disposed_share.append(self.disposed_stock_by_day[d][0])
-				disposed_share_yen.append(self.disposed_stock_by_day[d][1])
+			# if False:
+			if d in self.disposed_shares_daily.keys():
+				disposed_share.append(self.disposed_shares_daily[d][0])
+				disposed_share_yen.append(self.disposed_shares_daily[d][1])
 			else:
 				disposed_share.append(None)
 				disposed_share_yen.append(None)
