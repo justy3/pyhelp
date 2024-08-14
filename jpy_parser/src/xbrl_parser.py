@@ -73,7 +73,7 @@ class JPY_shares:
 		self.shares_held 						= None
 		self.resolution_status_shares 			= None
 		self.resolution_status_shares_yen 		= None
-		self.acquired_shares_by_day 			= None
+		self.acquired_shares_daily 			= None
 		self.cumulative_shares_acquired 		= None
 		self.cumulative_shares_acquired_yen 	= None
 		self.total_shares_acquired 				= None
@@ -238,7 +238,7 @@ class JPY_shares:
 
 		self.resolution_status_shares 		= resolution_status[0]
 		self.resolution_status_shares_yen 	= resolution_status[1]
-		self.acquired_shares_by_day 		= daily_data
+		self.acquired_shares_daily 		= daily_data
 		self.cumulative_shares_acquired 	= cumulative_shares_acquired[0]
 		self.cumulative_shares_acquired_yen = cumulative_shares_acquired[1]
 		self.total_shares_acquired 			= total_shares_acquired[0]
@@ -313,7 +313,7 @@ class JPY_shares:
 			df_dict[k] = [self.__dict__[k]]
 
 		all_reporting_dates = []
-		all_reporting_dates = list(self.acquired_shares_by_day.keys()) # + list(self.disposed_stock_by_day.keys())
+		all_reporting_dates = list(self.acquired_shares_daily.keys()) + list(self.disposed_shares_daily.keys())
 		all_reporting_dates = list(set(all_reporting_dates))
 
 		# fill following fields for reporting dates
@@ -322,9 +322,9 @@ class JPY_shares:
 
 		all_reporting_dates.sort()
 		for d in all_reporting_dates:
-			if d in self.acquired_shares_by_day.keys():
-				acquired_share.append(self.acquired_shares_by_day[d][0])
-				acquired_share_yen.append(self.acquired_shares_by_day[d][1])
+			if d in self.acquired_shares_daily.keys():
+				acquired_share.append(self.acquired_shares_daily[d][0])
+				acquired_share_yen.append(self.acquired_shares_daily[d][1])
 			else:
 				acquired_share.append(None)
 				acquired_share_yen.append(None)
