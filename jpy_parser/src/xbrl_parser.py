@@ -128,7 +128,7 @@ class JPY_shares:
 	def get_submission_date(self):
 		parsed_dict = self.parsed_dictionary
 		date = parsed_dict['xbrli:xbrl']["jpcrp-sbr_cor:FilingDateCoverPage"]["#text"]
-		date = datetime.strptime(date, "%Y-%d-%M").date()
+		date = datetime.strptime(date, "%Y-%m-%d").date()
 		self.submission_date = date
 
 
