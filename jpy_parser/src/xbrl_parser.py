@@ -195,7 +195,7 @@ class JPY_shares:
 					for dat in data_parsed:
 						date_string = dat[0] + " " + str(self.submission_date.year)
 						date_string = date_string.translate(str.maketrans('０１２３４５６７８９', '0123456789'))
-						date = datetime.strptime(date_string, "%M月%d日  %Y").date()
+						date = datetime.strptime(date_string, "%m月%d日  %Y").date()
 						daily_data[date] = (int(dat[1].replace(",", "")), int(dat[2].replace(",", "")))
 
 					last_date = data_parsed[-1][0]
@@ -263,7 +263,7 @@ class JPY_shares:
 			for dat in data_parsed:
 				date_string = dat[0] + " " + str(self.submission_date.year)
 				date_string = date_string.translate(str.maketrans('０１２３４５６７８９', '0123456789'))
-				date = datetime.strptime(date_string, "%M月%d日  %Y").date()
+				date = datetime.strptime(date_string, "%m月%d日  %Y").date()
 				daily_data[date] = (int(dat[1].replace(",", "")), int(dat[2].replace(",", "")))
 
 		except Exception as e:

@@ -4,7 +4,7 @@ if __name__=="__main__":
 	# EXAMPLE
 	mypath = "/home/justy/private/capula/pyhelp/jpy_parser/data_XBRL/"
 	xbrlfiles = [f for f in os.listdir(mypath) if f.endswith("_XBRL")]
-	# xbrlfiles = ["S100RKG4_XBRL"]
+	# xbrlfiles = ["S100RKD8_XBRL"]
 
 	jpy_parsed = []
 	jpy_parsed_df = []
