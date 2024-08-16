@@ -1,5 +1,5 @@
 ,file_name,edinet_id,submission_date,reporting_period_start,reporting_period_end,company_name,shares_issued,shares_held,resolution_status_shares,resolution_status_shares_yen,buyback_meeting_date,buyback_period_start,buyback_period_end,total_shares_acquired,total_shares_acquired_yen,cumulative_shares_acquired,cumulative_shares_acquired_yen,reporting_period_date,acquired_shares,acquired_shares_yen,disposed_share,disposed_share_yen
-0,toyota_20231213_XBRL,E02144,2023-12-13,2023-11-01,2023-11-30,TOYOTA MOTOR CORPORATION,16314987460.0,2821046252.0,10,"404,800",2023年11月１日,2023年11月２日,2024年４月30日,"7,116,300","19,931,167,600","7,116,300","19,931,167,600",2023-11-10,404800,1130392000,,
+0,toyota_20231213_XBRL,E02144,2023-12-13,2023-11-01,2023-11-30,TOYOTA MOTOR CORPORATION,16314987460.0,2821046252.0,10,"404,800",2023-11-01,2023-11-02,2024-04-30,"7,116,300","19,931,167,600","7,116,300","19,931,167,600",2023-11-10,404800,1130392000,,
 1,,,,,,,,,,,,,,,,,,2023-11-13,500000,1410193800,,
 2,,,,,,,,,,,,,,,,,,2023-11-14,446000,1271402250,,
 3,,,,,,,,,,,,,,,,,,2023-11-15,500000,1435485000,,

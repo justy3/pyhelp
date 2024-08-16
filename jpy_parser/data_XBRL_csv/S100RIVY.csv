@@ -1,5 +1,5 @@
 ,file_name,edinet_id,submission_date,reporting_period_start,reporting_period_end,company_name,shares_issued,shares_held,resolution_status_shares,resolution_status_shares_yen,buyback_meeting_date,buyback_period_start,buyback_period_end,total_shares_acquired,total_shares_acquired_yen,cumulative_shares_acquired,cumulative_shares_acquired_yen,reporting_period_date,acquired_shares,acquired_shares_yen,disposed_share,disposed_share_yen
-0,S100RIVY_XBRL,E05739,2023-08-07,2023-07-01,2023-07-31,TIS Inc.,244445411.0,3189090.0,"1,800,000","6,200,000,000",2023年５月９日,2023年５月10日,2023年８月31日,"542,100","1,949,601,202","1,678,900","6,199,897,691",2023-07-03,55500,203455601,,
+0,S100RIVY_XBRL,E05739,2023-08-07,2023-07-01,2023-07-31,TIS Inc.,244445411.0,3189090.0,"1,800,000","6,200,000,000",2023-05-09,2023-05-10,2023-08-31,"542,100","1,949,601,202","1,678,900","6,199,897,691",2023-07-03,55500,203455601,,
 1,,,,,,,,,,,,,,,,,,2023-07-04,55200,202507498,,
 2,,,,,,,,,,,,,,,,,,2023-07-05,60400,219461400,,
 3,,,,,,,,,,,,,,,,,,2023-07-06,66900,240831396,,

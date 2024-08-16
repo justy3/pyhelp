@@ -1,5 +1,5 @@
 ,file_name,edinet_id,submission_date,reporting_period_start,reporting_period_end,company_name,shares_issued,shares_held,resolution_status_shares,resolution_status_shares_yen,buyback_meeting_date,buyback_period_start,buyback_period_end,total_shares_acquired,total_shares_acquired_yen,cumulative_shares_acquired,cumulative_shares_acquired_yen,reporting_period_date,acquired_shares,acquired_shares_yen,disposed_share,disposed_share_yen
-0,S100RK2R_XBRL,E33583,2023-08-07,2023-07-01,2023-07-31,ViSCO Technologies Corporation,6448000.0,370578.0,"220,000","150,000,000",2023年５月10日,2023年５月11日,2024年2月29日,"1,200","931,800","72,000","52,881,200",2023-07-03,1200,931800,,
+0,S100RK2R_XBRL,E33583,2023-08-07,2023-07-01,2023-07-31,ViSCO Technologies Corporation,6448000.0,370578.0,"220,000","150,000,000",2023-05-10,2023-05-11,2024-02-29,"1,200","931,800","72,000","52,881,200",2023-07-03,1200,931800,,
 1,,,,,,,,,,,,,,,,,,2023-07-04,1300,1010800,,
 2,,,,,,,,,,,,,,,,,,2023-07-05,1200,930800,,
 3,,,,,,,,,,,,,,,,,,2023-07-06,1100,848800,,

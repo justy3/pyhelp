@@ -33,6 +33,14 @@ def pattern_in_line(list_of_text, line):
 			break
 	return found
 
+def jp_date_to_py_date(date):
+	# 2023年11月30日	-> 2023-11-30
+	date = date.translate(str.maketrans('０１２３４５６７８９', '0123456789'))
+	for ch in "年月日":
+		date = date.replace(ch, " ")
+	date = datetime.strptime(date, "%Y %m %d ").date()
+	return date
+
 class JPY_shares:
 	field_keys = dict = {
 		"filing_date" : "jpcrp-sbr_cor:FilingDateCoverPage",
@@ -243,6 +251,8 @@ class JPY_shares:
 			jp_text_lines = list(filter(None, jp_text.split("\n")))
 			buyback_dates = re.findall(r'([\d]+年[\d]+月[\d]+日)', "\n".join(jp_text_lines))
 			assert(3<len(buyback_dates)), "couldnt find enough dates in the text block"
+			for i in range(len(buyback_dates)):
+				buyback_dates[i] = jp_date_to_py_date(buyback_dates[i])
 		except Exception as e:
 			logger.warning("couldnt find meeting date and buyback period")
 
