@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbrli:xbrl xmlns:jpcrp-sbr_cor="http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp-sbr/2021-11-01/jpcrp-sbr_cor" xmlns:jpdei_cor="http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/jpdei_cor" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <link:schemaRef xlink:href="jpcrp170000-sbr-001_E02144-000_2023-12-13_01_2023-12-13.xsd" xlink:type="simple"/>
+  <xbrli:context id="FilingDateInstant">
+<xbrli:entity>
+<xbrli:identifier scheme="http://disclosure.edinet-fsa.go.jp">E02144-000</xbrli:identifier>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:instant>2023-12-13</xbrli:instant>
+</xbrli:period>
+</xbrli:context>
+  <xbrli:unit id="pure">
+<xbrli:measure>xbrli:pure</xbrli:measure>
+</xbrli:unit>
+  <jpdei_cor:NumberOfSubmissionDEI contextRef="FilingDateInstant" decimals="0" unitRef="pure">1</jpdei_cor:NumberOfSubmissionDEI>
+  <jpcrp-sbr_cor:DocumentTitleCoverPage contextRef="FilingDateInstant">自己株券買付状況報告書</jpcrp-sbr_cor:DocumentTitleCoverPage>
+  <jpcrp-sbr_cor:ClauseOfStipulationCoverPage contextRef="FilingDateInstant">金融商品取引法第24条の６第１項</jpcrp-sbr_cor:ClauseOfStipulationCoverPage>
+  <jpcrp-sbr_cor:PlaceOfFilingCoverPage contextRef="FilingDateInstant">関東財務局長</jpcrp-sbr_cor:PlaceOfFilingCoverPage>
+  <jpcrp-sbr_cor:FilingDateCoverPage contextRef="FilingDateInstant">2023-12-13</jpcrp-sbr_cor:FilingDateCoverPage>
+  <jpcrp-sbr_cor:ReportingPeriodCoverPage contextRef="FilingDateInstant">自　2023年11月１日　至　2023年11月30日</jpcrp-sbr_cor:ReportingPeriodCoverPage>
+  <jpcrp-sbr_cor:CompanyNameCoverPage contextRef="FilingDateInstant">トヨタ自動車株式会社</jpcrp-sbr_cor:CompanyNameCoverPage>
+  <jpcrp-sbr_cor:CompanyNameInEnglishCoverPage contextRef="FilingDateInstant">TOYOTA MOTOR CORPORATION</jpcrp-sbr_cor:CompanyNameInEnglishCoverPage>
+  <jpcrp-sbr_cor:TitleAndNameOfRepresentativeCoverPage contextRef="FilingDateInstant">取締役社長　　佐　藤　恒　治</jpcrp-sbr_cor:TitleAndNameOfRepresentativeCoverPage>
+  <jpcrp-sbr_cor:AddressOfRegisteredHeadquarterCoverPage contextRef="FilingDateInstant">愛知県豊田市トヨタ町１番地</jpcrp-sbr_cor:AddressOfRegisteredHeadquarterCoverPage>
+  <jpcrp-sbr_cor:TelephoneNumberAddressOfRegisteredHeadquarterCoverPage contextRef="FilingDateInstant">&lt;0565&gt;28－2121</jpcrp-sbr_cor:TelephoneNumberAddressOfRegisteredHeadquarterCoverPage>
+  <jpcrp-sbr_cor:NameOfContactPersonCoverPage contextRef="FilingDateInstant">資本関連事業部長　　森　山　由　英</jpcrp-sbr_cor:NameOfContactPersonCoverPage>
+  <jpcrp-sbr_cor:NearestPlaceOfContactCoverPage contextRef="FilingDateInstant">東京都文京区後楽一丁目４番18号</jpcrp-sbr_cor:NearestPlaceOfContactCoverPage>
+  <jpcrp-sbr_cor:TelephoneNumberNearestPlaceOfContactCoverPage contextRef="FilingDateInstant">&lt;03&gt;3817－7111</jpcrp-sbr_cor:TelephoneNumberNearestPlaceOfContactCoverPage>
+  <jpcrp-sbr_cor:NameOfContactPersonNearestPlaceOfContactCoverPage contextRef="FilingDateInstant">広報部長　　入　江　　晶</jpcrp-sbr_cor:NameOfContactPersonNearestPlaceOfContactCoverPage>
+  <jpcrp-sbr_cor:PlaceForPublicInspectionCoverPageTextBlock contextRef="FilingDateInstant">&lt;p class="smt_tblL" style="orphans:0;widows:0;line-height:18pt;"&gt; 株式会社東京証券取引所&lt;br/&gt;（東京都中央区日本橋兜町２番１号）&lt;br/&gt;株式会社名古屋証券取引所&lt;br/&gt;（名古屋市中区栄三丁目８番20号） &lt;br/&gt;　&lt;/p&gt;</jpcrp-sbr_cor:PlaceForPublicInspectionCoverPageTextBlock>
+  <jpdei_cor:EDINETCodeDEI contextRef="FilingDateInstant">E02144</jpdei_cor:EDINETCodeDEI>
+  <jpdei_cor:FundCodeDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:SecurityCodeDEI contextRef="FilingDateInstant">72030</jpdei_cor:SecurityCodeDEI>
+  <jpdei_cor:FilerNameInJapaneseDEI contextRef="FilingDateInstant">トヨタ自動車株式会社</jpdei_cor:FilerNameInJapaneseDEI>
+  <jpdei_cor:FilerNameInEnglishDEI contextRef="FilingDateInstant">TOYOTA MOTOR CORPORATION</jpdei_cor:FilerNameInEnglishDEI>
+  <jpdei_cor:FundNameInJapaneseDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:FundNameInEnglishDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:CabinetOfficeOrdinanceDEI contextRef="FilingDateInstant">企業内容等の開示に関する内閣府令</jpdei_cor:CabinetOfficeOrdinanceDEI>
+  <jpdei_cor:DocumentTypeDEI contextRef="FilingDateInstant">第十七号様式</jpdei_cor:DocumentTypeDEI>
+  <jpdei_cor:AccountingStandardsDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:WhetherConsolidatedFinancialStatementsArePreparedDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:IndustryCodeWhenConsolidatedFinancialStatementsArePreparedInAccordanceWithIndustrySpecificRegulationsDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:IndustryCodeWhenFinancialStatementsArePreparedInAccordanceWithIndustrySpecificRegulationsDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:CurrentFiscalYearStartDateDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:CurrentPeriodEndDateDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:TypeOfCurrentPeriodDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:CurrentFiscalYearEndDateDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:PreviousFiscalYearStartDateDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:ComparativePeriodEndDateDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:PreviousFiscalYearEndDateDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:NextFiscalYearStartDateDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:EndDateOfQuarterlyOrSemiAnnualPeriodOfNextFiscalYearDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:AmendmentFlagDEI contextRef="FilingDateInstant">false</jpdei_cor:AmendmentFlagDEI>
+  <jpdei_cor:IdentificationOfDocumentSubjectToAmendmentDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:ReportAmendmentFlagDEI contextRef="FilingDateInstant">false</jpdei_cor:ReportAmendmentFlagDEI>
+  <jpdei_cor:XBRLAmendmentFlagDEI contextRef="FilingDateInstant">false</jpdei_cor:XBRLAmendmentFlagDEI>
+  <jpcrp-sbr_cor:ClassesOfSharesTextBlock contextRef="FilingDateInstant">
+&lt;div class="tbld"&gt;
+&lt;table cellpadding="0" cellspacing="0" style="border-collapse:collapse;border:solid 0pt #000000;width:163.5pt;table-layout:fixed;"&gt;
+&lt;colgroup&gt;
+&lt;col style="width:73.5pt;min-width:73.5pt;"/&gt;
+&lt;col style="width:90pt;min-width:90pt;"/&gt;
+&lt;/colgroup&gt;
+&lt;tr style="height:13.5pt;min-height:13.5pt;"&gt;
+&lt;td style="vertical-align:top;overflow:hidden;" valign="top"&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;padding-left:0pt;padding-right:0pt;line-height:18pt;font-size:10.5pt;"&gt;株式の種類&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:top;border-bottom-style:solid;border-bottom-width:0.75pt;border-bottom-color:#000000;overflow:hidden;" valign="top"&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;padding-left:0pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;line-height:18pt;font-size:9pt;"&gt;普通株式&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;&lt;p style="clear:both; line-height:0.75pt; width:100%; font-size:0.75pt;"&gt; &lt;/p&gt;
+&lt;/div&gt;</jpcrp-sbr_cor:ClassesOfSharesTextBlock>
+  <jpcrp-sbr_cor:AcquisitionsByResolutionOfShareholdersMeetingTextBlock contextRef="FilingDateInstant">&lt;p class="smt_text2" style="orphans:0;widows:0;"&gt;　当該事項はありません。&lt;/p&gt;&lt;p class="smt_text2" style="orphans:0;widows:0;text-align:justify;padding-left:9pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;text-indent:9pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:15pt;font-size:15pt;"&gt; &lt;/p&gt;</jpcrp-sbr_cor:AcquisitionsByResolutionOfShareholdersMeetingTextBlock>
+  <jpcrp-sbr_cor:AcquisitionsByResolutionOfBoardOfDirectorsMeetingTextBlock contextRef="FilingDateInstant">
+&lt;div class="tbld" style="margin-left:0pt;margin-right:0pt;margin-top:0pt;margin-bottom:0pt;"&gt;
+&lt;table cellpadding="0" cellspacing="0" style="border-collapse:collapse;border:solid 0pt #000000;width:477.5pt;table-layout:fixed;"&gt;
+&lt;colgroup&gt;
+&lt;col style="width:200pt;min-width:200pt;"/&gt;
+&lt;col style="width:57pt;min-width:57pt;"/&gt;
+&lt;col style="width:100.5pt;min-width:100.5pt;"/&gt;
+&lt;col style="width:120pt;min-width:120pt;"/&gt;
+&lt;/colgroup&gt;
+&lt;tr style="height:12.8pt;min-height:12.8pt;"&gt;
+&lt;td colspan="4" style="vertical-align:top;border-bottom-style:solid;border-bottom-width:0.75pt;border-bottom-color:#000000;overflow:hidden;" valign="top"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;2023年11月30日現在&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height:21pt;min-height:21pt;"&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-top-color:#000000;border-bottom-style:solid;border-bottom-width:0.75pt;border-left-style:solid;border-left-width:0.75pt;border-right-style:solid;border-right-width:0.75pt;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblC" style="orphans:0;widows:0;text-align:center;padding-left:0pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;区分&lt;/p&gt;
+&lt;/td&gt;
+&lt;td colspan="2" style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-bottom-style:solid;border-bottom-width:0.75pt;border-left-style:solid;border-left-width:0.75pt;border-right-style:solid;border-right-width:0.75pt;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblC" style="orphans:0;widows:0;text-align:center;padding-left:0pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;株式数(株)&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-top-color:#000000;border-bottom-style:solid;border-bottom-width:0.75pt;border-left-style:solid;border-left-width:0.75pt;border-right-style:solid;border-right-width:0.75pt;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblC" style="orphans:0;widows:0;text-align:center;padding-left:0pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;価額の総額(円)&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height:21pt;min-height:21pt;"&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-bottom-style:solid;border-bottom-width:0.75pt;border-bottom-color:#000000;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;text-align:justify;padding-left:4.5pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;取締役会(2023年11月１日)での決議状況&lt;/p&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;text-align:justify;padding-left:4.5pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;font-size:9pt;"&gt;(取得期間2023年11月２日～2024年４月30日)&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-bottom-style:solid;border-bottom-width:0.75pt;border-bottom-color:#000000;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-color:#a9a9a9;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;padding-left:0pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;"&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-bottom-style:solid;border-bottom-width:0.75pt;border-bottom-color:#000000;border-left-color:#a9a9a9;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;60,000,000（上限）&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-bottom-style:solid;border-bottom-width:0.75pt;border-bottom-color:#000000;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;100,000,000,000（上限）&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height:21pt;min-height:21pt;"&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-top-color:#000000;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;text-align:justify;padding-left:4.5pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;報告月における取得自己株式(取得日)&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-top-color:#000000;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblC" style="orphans:0;widows:0;text-align:center;padding-left:0pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;11月10日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-top-color:#000000;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;404,800&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-top-color:#000000;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;1,130,392,000&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height:21pt;min-height:21pt;"&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;text-align:justify;padding-left:4.5pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;font-size:10pt;"&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblC" style="orphans:0;widows:0;text-align:center;padding-left:0pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;11月13日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;500,000&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;1,410,193,800&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height:21pt;min-height:21pt;"&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;text-align:justify;padding-left:4.5pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;font-size:10pt;"&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblC" style="orphans:0;widows:0;text-align:center;padding-left:0pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;11月14日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;446,000&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;1,271,402,250&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height:21pt;min-height:21pt;"&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;text-align:justify;padding-left:4.5pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;font-size:10pt;"&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblC" style="orphans:0;widows:0;text-align:center;padding-left:0pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;11月15日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;500,000&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;1,435,485,000&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height:21pt;min-height:21pt;"&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;text-align:justify;padding-left:4.5pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;font-size:10pt;"&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblC" style="orphans:0;widows:0;text-align:center;padding-left:0pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;11月16日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;470,800&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;1,352,490,200&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height:21pt;min-height:21pt;"&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;text-align:justify;padding-left:4.5pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;font-size:10pt;"&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblC" style="orphans:0;widows:0;text-align:center;padding-left:0pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;11月17日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;179,400&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;513,163,750&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height:21pt;min-height:21pt;"&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;text-align:justify;padding-left:4.5pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;font-size:10pt;"&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblC" style="orphans:0;widows:0;text-align:center;padding-left:0pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;11月20日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;1,000,000&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;2,803,974,550&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height:21pt;min-height:21pt;"&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;text-align:justify;padding-left:4.5pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;font-size:10pt;"&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblC" style="orphans:0;widows:0;text-align:center;padding-left:0pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;11月21日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;700,000&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;1,918,990,350&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height:21pt;min-height:21pt;"&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;text-align:justify;padding-left:4.5pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;font-size:10pt;"&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblC" style="orphans:0;widows:0;text-align:center;padding-left:0pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;11月24日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;811,600&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;2,273,959,300&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height:21pt;min-height:21pt;"&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;text-align:justify;padding-left:4.5pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;font-size:10pt;"&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblC" style="orphans:0;widows:0;text-align:center;padding-left:0pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;11月27日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;1,485,100&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-color:#a9a9a9;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;4,121,521,000&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height:21pt;min-height:21pt;"&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-style:solid;border-bottom-width:0.75pt;border-bottom-color:#000000;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;text-align:justify;padding-left:4.5pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;font-size:10pt;"&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-style:solid;border-bottom-width:0.75pt;border-bottom-color:#000000;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblC" style="orphans:0;widows:0;text-align:center;padding-left:0pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;11月28日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-style:solid;border-bottom-width:0.75pt;border-bottom-color:#000000;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;618,600&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-color:#a9a9a9;border-bottom-style:solid;border-bottom-width:0.75pt;border-bottom-color:#000000;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;1,699,595,400&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height:21pt;min-height:21pt;"&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-top-color:#000000;border-bottom-style:solid;border-bottom-width:0.75pt;border-bottom-color:#000000;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblC" style="orphans:0;widows:0;text-align:center;padding-left:0pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;計&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-top-color:#000000;border-bottom-style:solid;border-bottom-width:0.75pt;border-bottom-color:#000000;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblC" style="orphans:0;widows:0;text-align:center;padding-left:0pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;―&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-top-color:#000000;border-bottom-style:solid;border-bottom-width:0.75pt;border-bottom-color:#000000;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;7,116,300&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-top-color:#000000;border-bottom-style:solid;border-bottom-width:0.75pt;border-bottom-color:#000000;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;19,931,167,600&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height:21pt;min-height:21pt;"&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-top-color:#000000;border-bottom-style:solid;border-bottom-width:0.75pt;border-bottom-color:#000000;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;text-align:justify;padding-left:4.5pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;報告月末現在の累計取得自己株式&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-top-color:#000000;border-bottom-style:solid;border-bottom-width:0.75pt;border-bottom-color:#000000;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-color:#a9a9a9;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;padding-left:0pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;"&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-top-color:#000000;border-bottom-style:solid;border-bottom-width:0.75pt;border-bottom-color:#000000;border-left-color:#a9a9a9;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;7,116,300&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-top-color:#000000;border-bottom-style:solid;border-bottom-width:0.75pt;border-bottom-color:#000000;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;19,931,167,600&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height:21pt;min-height:21pt;"&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-top-color:#000000;border-bottom-style:solid;border-bottom-width:0.75pt;border-bottom-color:#000000;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;text-align:justify;padding-left:4.5pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;自己株式取得の進捗状況(％)&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-top-color:#000000;border-bottom-style:solid;border-bottom-width:0.75pt;border-bottom-color:#000000;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-color:#a9a9a9;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;padding-left:0pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;"&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-top-color:#000000;border-bottom-style:solid;border-bottom-width:0.75pt;border-bottom-color:#000000;border-left-color:#a9a9a9;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;11.86%&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-top-color:#000000;border-bottom-style:solid;border-bottom-width:0.75pt;border-bottom-color:#000000;border-left-style:solid;border-left-width:0.75pt;border-left-color:#000000;border-right-style:solid;border-right-width:0.75pt;border-right-color:#000000;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;19.93%&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;&lt;p style="clear:both; line-height:0.75pt; width:100%; font-size:0.75pt;"&gt; &lt;/p&gt;
+&lt;/div&gt;&lt;p class="smt_text2" style="orphans:0;widows:0;text-align:left;padding-left:0pt;text-indent:0pt;line-height:1pt;font-size:1pt;"&gt; &lt;/p&gt;
+&lt;div class="tbld" style="margin-left:0pt;margin-right:0pt;margin-top:0pt;margin-bottom:0pt;"&gt;
+&lt;table cellpadding="0" cellspacing="0" style="border-collapse:collapse;border:solid 0pt #000000;width:483.1pt;table-layout:fixed;"&gt;
+&lt;colgroup&gt;
+&lt;col style="width:35.3pt;min-width:35.3pt;"/&gt;
+&lt;col style="width:120.5pt;min-width:120.5pt;"/&gt;
+&lt;col style="width:327.3pt;min-width:327.3pt;"/&gt;
+&lt;/colgroup&gt;
+&lt;tr style="height:17.9pt;min-height:17.9pt;"&gt;
+&lt;td style="vertical-align:top;overflow:hidden;" valign="top"&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;text-align:right;padding-left:0pt;line-height:15pt;"&gt;(注)&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:top;overflow:hidden;" valign="top"&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;text-align:left;padding-left:0pt;padding-right:0pt;line-height:15pt;"&gt;自己株式取得の理由・・・&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:top;overflow:hidden;" valign="top"&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;padding-left:0pt;padding-right:0pt;text-justify:inter-ideograph;text-indent:0pt;line-height:15pt;"&gt;株価水準等を踏まえた機動的な自己株式取得&lt;/p&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;text-align:justify;padding-left:0pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:15pt;font-size:15pt;"&gt; &lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;&lt;p style="clear:both; line-height:0.75pt; width:100%; font-size:0.75pt;"&gt; &lt;/p&gt;
+&lt;/div&gt;</jpcrp-sbr_cor:AcquisitionsByResolutionOfBoardOfDirectorsMeetingTextBlock>
+  <jpcrp-sbr_cor:DisposalsOfTreasurySharesTextBlock contextRef="FilingDateInstant">&lt;p class="smt_text2" style="orphans:0;widows:0;"&gt;当該事項はありません。&lt;/p&gt;&lt;p class="smt_text2" style="orphans:0;widows:0;text-align:justify;padding-left:9pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;text-indent:9pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:15pt;font-size:15pt;"&gt; &lt;/p&gt;</jpcrp-sbr_cor:DisposalsOfTreasurySharesTextBlock>
+  <jpcrp-sbr_cor:HoldingOfTreasurySharesTextBlock contextRef="FilingDateInstant">
+&lt;div class="tbld" style="margin-left:0pt;margin-right:0pt;margin-top:0pt;margin-bottom:0pt;"&gt;
+&lt;table cellpadding="0" cellspacing="0" style="border-collapse:collapse;border:solid 0pt #000000;width:468pt;table-layout:fixed;"&gt;
+&lt;colgroup&gt;
+&lt;col style="width:234pt;min-width:234pt;"/&gt;
+&lt;col style="width:234pt;min-width:234pt;"/&gt;
+&lt;/colgroup&gt;
+&lt;tr style="height:12.8pt;min-height:12.8pt;"&gt;
+&lt;td colspan="2" style="vertical-align:top;border-bottom-style:solid;border-bottom-width:0.75pt;border-bottom-color:#000000;overflow:hidden;" valign="top"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;2023年11月30日現在&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height:22.5pt;min-height:22.5pt;"&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-bottom-style:solid;border-bottom-width:0.75pt;border-left-style:solid;border-left-width:0.75pt;border-right-style:solid;border-right-width:0.75pt;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblC" style="orphans:0;widows:0;text-align:center;padding-left:0pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;報告月末日における保有状況&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-bottom-style:solid;border-bottom-width:0.75pt;border-left-style:solid;border-left-width:0.75pt;border-right-style:solid;border-right-width:0.75pt;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblC" style="orphans:0;widows:0;text-align:center;padding-left:0pt;padding-right:0pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;株式数(株)&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height:22.5pt;min-height:22.5pt;"&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-bottom-style:solid;border-bottom-width:0.75pt;border-left-style:solid;border-left-width:0.75pt;border-right-style:solid;border-right-width:0.75pt;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;text-align:justify;padding-left:4.5pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;発行済株式総数&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-bottom-style:solid;border-bottom-width:0.75pt;border-left-style:solid;border-left-width:0.75pt;border-right-style:solid;border-right-width:0.75pt;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;16,314,987,460&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height:22.5pt;min-height:22.5pt;"&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-bottom-style:solid;border-bottom-width:0.75pt;border-left-style:solid;border-left-width:0.75pt;border-right-style:solid;border-right-width:0.75pt;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblL" style="orphans:0;widows:0;text-align:justify;padding-left:4.5pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;保有自己株式数&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align:middle;border-top-style:solid;border-top-width:0.75pt;border-bottom-style:solid;border-bottom-width:0.75pt;border-left-style:solid;border-left-width:0.75pt;border-right-style:solid;border-right-width:0.75pt;overflow:hidden;" valign="middle"&gt;&lt;p class="smt_tblR" style="orphans:0;widows:0;text-align:right;padding-left:0pt;padding-right:4.5pt;margin-top:0pt;margin-bottom:0pt;text-justify:inter-ideograph;text-indent:0pt;font-family:&amp;apos;ＭＳ 明朝&amp;apos;;letter-spacing:0pt;line-height:10pt;"&gt;2,821,046,252&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;&lt;p style="clear:both; line-height:0.75pt; width:100%; font-size:0.75pt;"&gt; &lt;/p&gt;
+&lt;/div&gt;&lt;p class="smt_text2" style="orphans:0;widows:0;"&gt;（注）保有自己株式数には、単元未満株式の買取請求により取得した自己株式などが含まれております。&lt;/p&gt;</jpcrp-sbr_cor:HoldingOfTreasurySharesTextBlock>
+</xbrli:xbrl>

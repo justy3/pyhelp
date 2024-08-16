@@ -210,9 +210,9 @@ class JPY_shares:
 			cumulative_shares_acquired = (None, None)
 
 			for i in range(len(en_text_lines)):
-				line = en_text_lines[i]
+				line = en_text_lines[i].lower()
 				if "accumulate" in line or "cumulative" in line:
-					data_parsed = re.findall(r'([0-9][0-9,.]*[0-9])[\s+]([0-9][0-9,.]*[0-9])', "\n".join(en_text_lines[i:]))[0]
+					data_parsed = re.findall(r'([0-9][0-9,.]*[0-9])[\s\n]*([0-9][0-9,.]*[0-9])', "\n".join(en_text_lines[i:]))[0]
 					cumulative_shares_acquired = (data_parsed[0], data_parsed[1])
 					break
 
@@ -236,6 +236,16 @@ class JPY_shares:
 		except Exception as e:
 			logger.warning(f"couldnt find total shares acquired, error : {e}")
 
+		# dates : meeting and buyback period
+		try:
+			buyback_dates = (None, None, None, None)
+			logger.info(f"getting meeting date and buyback period")
+			jp_text_lines = list(filter(None, jp_text.split("\n")))
+			buyback_dates = re.findall(r'([\d]+年[\d]+月[\d]+日)', "\n".join(jp_text_lines))
+			assert(3<len(buyback_dates)), "couldnt find enough dates in the text block"
+		except Exception as e:
+			logger.warning("couldnt find meeting date and buyback period")
+
 		self.resolution_status_shares 		= resolution_status[0]
 		self.resolution_status_shares_yen 	= resolution_status[1]
 		self.acquired_shares_daily 		= daily_data
@@ -243,16 +253,22 @@ class JPY_shares:
 		self.cumulative_shares_acquired_yen = cumulative_shares_acquired[1]
 		self.total_shares_acquired 			= total_shares_acquired[0]
 		self.total_shares_acquired_yen 		= total_shares_acquired[1]
+		self.buyback_meeting_date 	= buyback_dates[1]
+		self.buyback_period_start 	= buyback_dates[2]
+		self.buyback_period_end 	= buyback_dates[3]
 
 
 	def get_disposed_shares(self):
-		parsed_dict = self.parsed_dictionary
-		html_text = parsed_dict['xbrli:xbrl']["jpcrp-sbr_cor:DisposalsOfTreasurySharesTextBlock"]["#text"]
-		soup = BeautifulSoup(html_text, 'lxml')
-		jp_text = soup.text
-		jp_text_lines = list(filter(None, jp_text.split("\n")))
-		en_text = self.translator.translate(jp_text).lower()
-		en_text_lines = list(filter(None, en_text.split("\n")))
+		try:
+			parsed_dict = self.parsed_dictionary
+			html_text = parsed_dict['xbrli:xbrl']["jpcrp-sbr_cor:DisposalsOfTreasurySharesTextBlock"]["#text"]
+			soup = BeautifulSoup(html_text, 'lxml')
+			jp_text = soup.text
+			jp_text_lines = list(filter(None, jp_text.split("\n")))
+			en_text = self.translator.translate(jp_text).lower()
+			en_text_lines = list(filter(None, en_text.split("\n")))
+		except Exception as e:
+			logger.warning(f"couldnt retrieve field DisposalsOfTreasurySharesTextBlock from xbrl contents")
 
 		# resolution status
 		try:
@@ -340,6 +356,9 @@ class JPY_shares:
 		# fill dictionary fields for dataframe
 		df_dict['resolution_status_shares'] 			= self.resolution_status_shares
 		df_dict['resolution_status_shares_yen'] 		= self.resolution_status_shares_yen
+		df_dict['buyback_meeting_date']					= self.buyback_meeting_date
+		df_dict['buyback_period_start']					= self.buyback_period_start
+		df_dict['buyback_period_end']					= self.buyback_period_end
 		df_dict['total_shares_acquired']				= self.total_shares_acquired
 		df_dict['total_shares_acquired_yen']			= self.total_shares_acquired_yen
 		df_dict['cumulative_shares_acquired'] 			= self.cumulative_shares_acquired
