@@ -178,7 +178,8 @@ class JPY_shares:
 			for i in range(len(en_text_lines)):
 				line = en_text_lines[i]
 				if "resolution" in line:
-					data_parsed = re.findall(r'([0-9][0-9,.]*[0-9])[\s+]([0-9][0-9,.]*[0-9])', "\n".join(en_text_lines))[0]
+					# data_parsed = re.findall(r'([0-9][0-9,.]*[0-9])[\s+]([0-9][0-9,.]*[0-9])', "\n".join(en_text_lines[i:]))[0]
+					data_parsed = re.findall(r'([0-9][0-9,.]*[0-9])', re.sub(r'\d{4}年\d{1,2}月\d{1,2}日', '', "\n".join(jp_text_lines[i:])))
 					resolution_status = (data_parsed[0], data_parsed[1])
 					break
 
