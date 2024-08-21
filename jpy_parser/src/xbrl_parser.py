@@ -10,6 +10,7 @@ import pandas as pd
 from pathlib import Path
 from bs4 import BeautifulSoup
 from datetime import datetime
+from jeraconv import jeraconv
 from deep_translator import GoogleTranslator
 
 '''
@@ -33,16 +34,35 @@ def pattern_in_line(list_of_text, line):
 			break
 	return found
 
-def jp_date_to_py_date(date):
+def jp_date_to_py_date(date, j2w=None):
 	# 2023年11月30日	-> 2023-11-30
-	date = date.translate(str.maketrans('０１２３４５６７８９', '0123456789'))
+	# western date
+	year 	= date[0].split("年")[0]
+	nyear 	= date[0].split("年")[1]
+
+	if date[1]!="":
+		if j2w == None:
+			j2w = jeraconv.J2W()
+		year_w 	= j2w.convert(year + "年")
+	else:
+		year_w = int(year.strip())
+
+	date = nyear.translate(str.maketrans('０１２３４５６７８９', '0123456789'))
 	for ch in "年月日":
 		date = date.replace(ch, " ")
-	date = datetime.strptime(date, "%Y %m %d ").date()
+
+	date_str = date.split(" ")
+	year 	= year_w
+	month 	= date_str[0]
+	day 	= date_str[1]
+
+	date_fmt = f"{year} {month} {day}"
+	date = datetime.strptime(date_fmt, "%Y %m %d").date()
 	return date
 
 class JPY_shares:
-	date_regex = "[\d]+年[\d]+月[\d]+日"
+	# date_regex = "[\d]+年[\d]+月[\d]+日"
+	date_regex = "(?:(令和|平成|昭和)?\s*\d{1,2}年\s*\d{1,2}月\s*\d{1,2}日)|(?:\d{4}年\s*\d{1,2}月\s*\d{1,2}日)"
 	field_keys = dict = {
 		"filing_date" : "jpcrp-sbr_cor:FilingDateCoverPage",
 		"reporting_period" : "jpcrp-sbr_cor:ReportingPeriodCoverPage",
