@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbrli:xbrl xmlns:jpcrp-sbr_cor="http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp-sbr/2021-11-01/jpcrp-sbr_cor" xmlns:jpdei_cor="http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/jpdei_cor" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <link:schemaRef xlink:href="jpcrp170000-sbr-001_E00065-000_2024-08-09_01_2024-08-09.xsd" xlink:type="simple"/>
+  <xbrli:context id="FilingDateInstant">
+<xbrli:entity>
+<xbrli:identifier scheme="http://disclosure.edinet-fsa.go.jp">E00065-000</xbrli:identifier>
+</xbrli:entity>
+<xbrli:period>
+<xbrli:instant>2024-08-09</xbrli:instant>
+</xbrli:period>
+</xbrli:context>
+  <xbrli:unit id="pure">
+<xbrli:measure>xbrli:pure</xbrli:measure>
+</xbrli:unit>
+  <jpdei_cor:NumberOfSubmissionDEI contextRef="FilingDateInstant" decimals="0" unitRef="pure">1</jpdei_cor:NumberOfSubmissionDEI>
+  <jpcrp-sbr_cor:DocumentTitleCoverPage contextRef="FilingDateInstant">自己株券買付状況報告書</jpcrp-sbr_cor:DocumentTitleCoverPage>
+  <jpcrp-sbr_cor:ClauseOfStipulationCoverPage contextRef="FilingDateInstant">金融商品取引法第24条の６第１項</jpcrp-sbr_cor:ClauseOfStipulationCoverPage>
+  <jpcrp-sbr_cor:PlaceOfFilingCoverPage contextRef="FilingDateInstant">関東財務局長</jpcrp-sbr_cor:PlaceOfFilingCoverPage>
+  <jpcrp-sbr_cor:FilingDateCoverPage contextRef="FilingDateInstant">2024-08-09</jpcrp-sbr_cor:FilingDateCoverPage>
+  <jpcrp-sbr_cor:ReportingPeriodCoverPage contextRef="FilingDateInstant">自　令和６年７月１日　至　令和６年７月31日</jpcrp-sbr_cor:ReportingPeriodCoverPage>
+  <jpcrp-sbr_cor:CompanyNameCoverPage contextRef="FilingDateInstant">鉄建建設株式会社</jpcrp-sbr_cor:CompanyNameCoverPage>
+  <jpcrp-sbr_cor:CompanyNameInEnglishCoverPage contextRef="FilingDateInstant">TEKKEN CORPORATION</jpcrp-sbr_cor:CompanyNameInEnglishCoverPage>
+  <jpcrp-sbr_cor:TitleAndNameOfRepresentativeCoverPage contextRef="FilingDateInstant">代表取締役社長　　伊藤　泰司</jpcrp-sbr_cor:TitleAndNameOfRepresentativeCoverPage>
+  <jpcrp-sbr_cor:AddressOfRegisteredHeadquarterCoverPage contextRef="FilingDateInstant">東京都千代田区神田三崎町二丁目５番３号</jpcrp-sbr_cor:AddressOfRegisteredHeadquarterCoverPage>
+  <jpcrp-sbr_cor:TelephoneNumberAddressOfRegisteredHeadquarterCoverPage contextRef="FilingDateInstant">０３（３２２１）２１５２</jpcrp-sbr_cor:TelephoneNumberAddressOfRegisteredHeadquarterCoverPage>
+  <jpcrp-sbr_cor:NameOfContactPersonCoverPage contextRef="FilingDateInstant">管理本部総務部長　　村上　康雄</jpcrp-sbr_cor:NameOfContactPersonCoverPage>
+  <jpcrp-sbr_cor:NearestPlaceOfContactCoverPage contextRef="FilingDateInstant">東京都千代田区神田三崎町二丁目５番３号</jpcrp-sbr_cor:NearestPlaceOfContactCoverPage>
+  <jpcrp-sbr_cor:TelephoneNumberNearestPlaceOfContactCoverPage contextRef="FilingDateInstant">０３（３２２１）２１５２</jpcrp-sbr_cor:TelephoneNumberNearestPlaceOfContactCoverPage>
+  <jpcrp-sbr_cor:NameOfContactPersonNearestPlaceOfContactCoverPage contextRef="FilingDateInstant">管理本部総務部長　　村上　康雄</jpcrp-sbr_cor:NameOfContactPersonNearestPlaceOfContactCoverPage>
+  <jpcrp-sbr_cor:PlaceForPublicInspectionCoverPageTextBlock contextRef="FilingDateInstant">
+&lt;p style="text-align: left"&gt;鉄建建設株式会社　関越支店&lt;/p&gt;
+&lt;p style="text-align: left"&gt;（さいたま市大宮区桜木町一丁目11番地７）&lt;/p&gt;
+&lt;p style="text-align: left"&gt;鉄建建設株式会社　東関東支店&lt;/p&gt;
+&lt;p style="text-align: left"&gt;（千葉市中央区新千葉一丁目７番３号）&lt;/p&gt;
+&lt;p style="text-align: left"&gt;鉄建建設株式会社　横浜支店&lt;/p&gt;
+&lt;p style="text-align: left"&gt;（横浜市中区不老町二丁目９番２号）&lt;/p&gt;
+&lt;p style="text-align: left"&gt;鉄建建設株式会社　名古屋支店&lt;/p&gt;
+&lt;p style="text-align: left"&gt;（名古屋市中村区名駅一丁目１番４号）&lt;/p&gt;
+&lt;p style="text-align: left"&gt;鉄建建設株式会社　大阪支店&lt;/p&gt;
+&lt;p style="text-align: left"&gt;（大阪市北区堂島一丁目５番17号）&lt;/p&gt;
+&lt;p style="text-align: left"&gt;株式会社東京証券取引所&lt;/p&gt;
+&lt;p style="text-align: left"&gt;（東京都中央区日本橋兜町２番１号）&lt;/p&gt;
+</jpcrp-sbr_cor:PlaceForPublicInspectionCoverPageTextBlock>
+  <jpdei_cor:EDINETCodeDEI contextRef="FilingDateInstant">E00065</jpdei_cor:EDINETCodeDEI>
+  <jpdei_cor:FundCodeDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:SecurityCodeDEI contextRef="FilingDateInstant">18150</jpdei_cor:SecurityCodeDEI>
+  <jpdei_cor:FilerNameInJapaneseDEI contextRef="FilingDateInstant">鉄建建設株式会社</jpdei_cor:FilerNameInJapaneseDEI>
+  <jpdei_cor:FilerNameInEnglishDEI contextRef="FilingDateInstant">TEKKEN CORPORATION</jpdei_cor:FilerNameInEnglishDEI>
+  <jpdei_cor:FundNameInJapaneseDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:FundNameInEnglishDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:CabinetOfficeOrdinanceDEI contextRef="FilingDateInstant">企業内容等の開示に関する内閣府令</jpdei_cor:CabinetOfficeOrdinanceDEI>
+  <jpdei_cor:DocumentTypeDEI contextRef="FilingDateInstant">第十七号様式</jpdei_cor:DocumentTypeDEI>
+  <jpdei_cor:AccountingStandardsDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:WhetherConsolidatedFinancialStatementsArePreparedDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:IndustryCodeWhenConsolidatedFinancialStatementsArePreparedInAccordanceWithIndustrySpecificRegulationsDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:IndustryCodeWhenFinancialStatementsArePreparedInAccordanceWithIndustrySpecificRegulationsDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:CurrentFiscalYearStartDateDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:CurrentPeriodEndDateDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:TypeOfCurrentPeriodDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:CurrentFiscalYearEndDateDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:PreviousFiscalYearStartDateDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:ComparativePeriodEndDateDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:PreviousFiscalYearEndDateDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:NextFiscalYearStartDateDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:EndDateOfQuarterlyOrSemiAnnualPeriodOfNextFiscalYearDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:AmendmentFlagDEI contextRef="FilingDateInstant">false</jpdei_cor:AmendmentFlagDEI>
+  <jpdei_cor:IdentificationOfDocumentSubjectToAmendmentDEI contextRef="FilingDateInstant" xsi:nil="true"/>
+  <jpdei_cor:ReportAmendmentFlagDEI contextRef="FilingDateInstant">false</jpdei_cor:ReportAmendmentFlagDEI>
+  <jpdei_cor:XBRLAmendmentFlagDEI contextRef="FilingDateInstant">false</jpdei_cor:XBRLAmendmentFlagDEI>
+  <jpcrp-sbr_cor:ClassesOfSharesTextBlock contextRef="FilingDateInstant">&lt;span style="font-family: &amp;apos;ＭＳ ゴシック&amp;apos;; font-size: 14px"&gt;株式の種類&lt;/span&gt;　　　普通株式</jpcrp-sbr_cor:ClassesOfSharesTextBlock>
+  <jpcrp-sbr_cor:AcquisitionsByResolutionOfShareholdersMeetingTextBlock contextRef="FilingDateInstant">
+&lt;h4&gt;（１）【株主総会決議による取得の状況】&lt;/h4&gt;
+&lt;p style="margin-left: 60px; text-align: left"&gt;　該当事項はありません。&lt;/p&gt;
+&lt;p style="text-align: left"&gt; &lt;/p&gt;
+</jpcrp-sbr_cor:AcquisitionsByResolutionOfShareholdersMeetingTextBlock>
+  <jpcrp-sbr_cor:AcquisitionsByResolutionOfBoardOfDirectorsMeetingTextBlock contextRef="FilingDateInstant">
+&lt;h4&gt;（２）【取締役会決議による取得の状況】&lt;/h4&gt;
+&lt;div&gt;
+&lt;table cellpadding="0" cellspacing="0" style="table-layout: fixed; width: 648px"&gt;
+&lt;colgroup&gt;
+&lt;col style="width: 648px"/&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr style="height: 1.33px"&gt;
+&lt;td style="vertical-align: middle; width: 648px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 0px none ; border-top: 0px none ; border-right: 0px none ; border-bottom: 0px none "&gt;
+&lt;p style="text-align: right"&gt;令和６年７月31日現在&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p style="line-height: 1.3333333333333333333333333333px; text-align: left"&gt; &lt;/p&gt;
+&lt;div&gt;
+&lt;table cellpadding="0" cellspacing="0" style="table-layout: fixed; width: 648px"&gt;
+&lt;colgroup&gt;
+&lt;col style="width: 312px"/&gt;
+&lt;col style="width: 96px"/&gt;
+&lt;col style="width: 96px"/&gt;
+&lt;col style="width: 144px"/&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="line-height: 13.333333333333333333333333333px; text-align: center"&gt;区分&lt;/p&gt;
+&lt;/td&gt;
+&lt;td colspan="2" style="vertical-align: middle; width: 192px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="line-height: 13.333333333333333333333333333px; text-align: center"&gt;株式数（株）&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="line-height: 13.333333333333333333333333333px; text-align: center"&gt;価額の総額（円）&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;取締役会（令和６年２月14日）での決議状況&lt;/p&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;（取得期間　令和６年２月15日～令和６年12月30日）&lt;/p&gt;
+&lt;/td&gt;
+&lt;td colspan="2" style="vertical-align: middle; width: 192px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;1,700,000&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;3,000,000,000&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;報告月における取得自己株式（取得日）&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="text-align: center"&gt;７月１日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;6,100&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;15,920,100&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;
+&lt;span style="font-size: 12px"&gt; &lt;/span&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="text-align: center"&gt;７月２日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;6,000&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;15,589,900&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;
+&lt;span style="font-size: 12px"&gt; &lt;/span&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="text-align: center"&gt;７月３日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;6,000&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;15,559,700&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;
+&lt;span style="font-size: 12px"&gt; &lt;/span&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="text-align: center"&gt;７月４日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;7,400&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;19,292,500&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;
+&lt;span style="font-size: 12px"&gt; &lt;/span&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="text-align: center"&gt;７月５日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;7,300&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;18,944,300&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;
+&lt;span style="font-size: 12px"&gt; &lt;/span&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="text-align: center"&gt;７月８日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;6,400&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;16,243,600&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;
+&lt;span style="font-size: 12px"&gt; &lt;/span&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="text-align: center"&gt;７月９日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;9,500&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;24,409,100&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;
+&lt;span style="font-size: 12px"&gt; &lt;/span&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="text-align: center"&gt;７月10日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;8,500&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;22,024,800&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;
+&lt;span style="font-size: 12px"&gt; &lt;/span&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="text-align: center"&gt;７月11日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;25,500&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;65,990,600&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;
+&lt;span style="font-size: 12px"&gt; &lt;/span&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="text-align: center"&gt;７月12日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;6,400&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;16,603,200&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;
+&lt;span style="font-size: 12px"&gt; &lt;/span&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="text-align: center"&gt;７月16日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;14,500&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;37,970,900&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;
+&lt;span style="font-size: 12px"&gt; &lt;/span&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="text-align: center"&gt;７月17日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;3,300&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;8,681,200&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;
+&lt;span style="font-size: 12px"&gt; &lt;/span&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="text-align: center"&gt;７月18日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;3,800&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;9,921,500&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;
+&lt;span style="font-size: 12px"&gt; &lt;/span&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="text-align: center"&gt;７月19日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;4,900&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;12,596,700&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;
+&lt;span style="font-size: 12px"&gt; &lt;/span&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="text-align: center"&gt;７月22日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;4,800&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;12,126,000&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;
+&lt;span style="font-size: 12px"&gt; &lt;/span&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="text-align: center"&gt;７月23日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;3,900&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;9,823,500&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;
+&lt;span style="font-size: 12px"&gt; &lt;/span&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="text-align: center"&gt;７月24日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;9,700&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;24,185,700&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;
+&lt;span style="font-size: 12px"&gt; &lt;/span&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="text-align: center"&gt;７月25日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;12,100&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;29,881,200&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;
+&lt;span style="font-size: 12px"&gt; &lt;/span&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="text-align: center"&gt;７月26日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;3,700&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;9,155,900&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;
+&lt;span style="font-size: 12px"&gt; &lt;/span&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="text-align: center"&gt;７月29日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;6,700&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;16,907,800&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;
+&lt;span style="font-size: 12px"&gt; &lt;/span&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="text-align: center"&gt;７月30日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;5,100&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 0px none "&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;12,764,200&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;
+&lt;span style="font-size: 12px"&gt; &lt;/span&gt;
+&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="text-align: center"&gt;７月31日&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;10,600&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 0px none ; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;27,136,000&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="text-align: center"&gt;計&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="text-align: center"&gt;－&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 96px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;172,200&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;441,728,400&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;報告月末現在の累計取得自己株式&lt;/p&gt;
+&lt;/td&gt;
+&lt;td colspan="2" style="vertical-align: middle; width: 192px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;864,300&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;2,265,810,500&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 312px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="margin-left: 6px; margin-right: 4px; text-align: left"&gt;自己株式取得の進捗状況（％）&lt;/p&gt;
+&lt;/td&gt;
+&lt;td colspan="2" style="vertical-align: middle; width: 192px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;50.84&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 144px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="margin-right: 12px; text-align: right"&gt;75.53&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p style="text-align: left"&gt;（注）１．「取得期間」及び「報告月における取得自己株式（取得日）」は約定日ベースで記載しています。&lt;/p&gt;
+&lt;p style="text-align: left"&gt;　　　２．上記取締役会において、東京証券取引所における市場買付による取得を決議しました。&lt;/p&gt;
+</jpcrp-sbr_cor:AcquisitionsByResolutionOfBoardOfDirectorsMeetingTextBlock>
+  <jpcrp-sbr_cor:DisposalsOfTreasurySharesTextBlock contextRef="FilingDateInstant">
+&lt;h3&gt;２【処理状況】&lt;/h3&gt;
+&lt;div&gt;
+&lt;table cellpadding="0" cellspacing="0" style="table-layout: fixed; width: 648px"&gt;
+&lt;colgroup&gt;
+&lt;col style="width: 648px"/&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr style="height: 1.33px"&gt;
+&lt;td style="vertical-align: middle; width: 648px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 0px none ; border-top: 0px none ; border-right: 0px none ; border-bottom: 0px none "&gt;
+&lt;p style="margin-left: 36px; text-align: left"&gt;該当事項はありません。&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p style="line-height: 1.3333333333333333333333333333px; text-align: left"&gt; &lt;/p&gt;
+&lt;p style="text-align: left"&gt; &lt;/p&gt;
+</jpcrp-sbr_cor:DisposalsOfTreasurySharesTextBlock>
+  <jpcrp-sbr_cor:HoldingOfTreasurySharesTextBlock contextRef="FilingDateInstant">
+&lt;h3&gt;３【保有状況】&lt;/h3&gt;
+&lt;div&gt;
+&lt;table cellpadding="0" cellspacing="0" style="table-layout: fixed; width: 648px"&gt;
+&lt;colgroup&gt;
+&lt;col style="width: 648px"/&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr style="height: 1.33px"&gt;
+&lt;td style="vertical-align: middle; width: 648px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 0px none ; border-top: 0px none ; border-right: 0px none ; border-bottom: 0px none "&gt;
+&lt;p style="text-align: right"&gt;令和６年７月31日現在&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p style="line-height: 1.3333333333333333333333333333px; text-align: left"&gt; &lt;/p&gt;
+&lt;div&gt;
+&lt;table cellpadding="0" cellspacing="0" style="table-layout: fixed; width: 648px"&gt;
+&lt;colgroup&gt;
+&lt;col style="width: 324px"/&gt;
+&lt;col style="width: 324px"/&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 324px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="line-height: 13.333333333333333333333333333px; text-align: center"&gt;報告月末日における保有状況&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 324px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="line-height: 13.333333333333333333333333333px; text-align: center"&gt;株式数（株）&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 324px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="margin-left: 12px; margin-right: 10px; text-align: left"&gt;発行済株式総数&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 324px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="margin-right: 24px; text-align: right"&gt;15,668,956&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr style="height: 26.67px"&gt;
+&lt;td style="vertical-align: middle; width: 324px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="margin-left: 12px; margin-right: 10px; text-align: left"&gt;保有自己株式数&lt;/p&gt;
+&lt;/td&gt;
+&lt;td style="vertical-align: middle; width: 324px; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; border-left: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000"&gt;
+&lt;p style="margin-right: 24px; text-align: right"&gt;1,378,736&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p style="text-align: left"&gt;（注）保有自己株式数には、単元未満株式の買取請求により取得した自己株式を含んでいます。&lt;/p&gt;
+</jpcrp-sbr_cor:HoldingOfTreasurySharesTextBlock>
+</xbrli:xbrl>
