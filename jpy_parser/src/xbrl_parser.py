@@ -145,12 +145,8 @@ class JPY_shares:
 		parsed_dict = self.parsed_dictionary
 		dates_parsed = parsed_dict['xbrli:xbrl']["jpcrp-sbr_cor:ReportingPeriodCoverPage"]["#text"]
 		dates_parsed = re.findall(fr'({self.date_regex})', dates_parsed)
-		for i in range(len(dates_parsed)):
-			dates_parsed[i] = dates_parsed[i].translate(str.maketrans('０１２３４５６７８９', '0123456789'))
-			for ch in "年月日":
-				dates_parsed[i] = dates_parsed[i].replace(ch, " ")
-		date_from 	= datetime.strptime(dates_parsed[0], "%Y %m %d ").date()
-		date_to 	= datetime.strptime(dates_parsed[1], "%Y %m %d ").date()
+		date_from 	= jp_date_to_py_date(dates_parsed[0])
+		date_to 	= jp_date_to_py_date(dates_parsed[1])
 		self.reporting_period_start = date_from
 		self.reporting_period_end 	= date_to
 
