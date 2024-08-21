@@ -42,6 +42,7 @@ def jp_date_to_py_date(date):
 	return date
 
 class JPY_shares:
+	date_regex = "[\d]+年[\d]+月[\d]+日"
 	field_keys = dict = {
 		"filing_date" : "jpcrp-sbr_cor:FilingDateCoverPage",
 		"reporting_period" : "jpcrp-sbr_cor:ReportingPeriodCoverPage",
@@ -143,7 +144,7 @@ class JPY_shares:
 	def get_reporting_period(self):
 		parsed_dict = self.parsed_dictionary
 		dates_parsed = parsed_dict['xbrli:xbrl']["jpcrp-sbr_cor:ReportingPeriodCoverPage"]["#text"]
-		dates_parsed = re.findall(r'([\d]+年[\d]+月[\d]+日)', dates_parsed)
+		dates_parsed = re.findall(fr'({self.date_regex})', dates_parsed)
 		for i in range(len(dates_parsed)):
 			dates_parsed[i] = dates_parsed[i].translate(str.maketrans('０１２３４５６７８９', '0123456789'))
 			for ch in "年月日":
@@ -179,7 +180,7 @@ class JPY_shares:
 				line = en_text_lines[i]
 				if "resolution" in line:
 					# data_parsed = re.findall(r'([0-9][0-9,.]*[0-9])[\s+]([0-9][0-9,.]*[0-9])', "\n".join(en_text_lines[i:]))[0]
-					data_parsed = re.findall(r'([0-9][0-9,.]*[0-9])', re.sub(r'\d{4}年\d{1,2}月\d{1,2}日', '', "\n".join(jp_text_lines[i:])))
+					data_parsed = re.findall(r'([0-9][0-9,.]*[0-9])', re.sub(fr'{self.date_regex}', '', "\n".join(jp_text_lines[i:])))
 					resolution_status = (data_parsed[0], data_parsed[1])
 					break
 
@@ -199,7 +200,7 @@ class JPY_shares:
 				line = en_text_lines[i]
 
 				if "reporting month" in line:
-					data_parsed = re.findall(r'([\d]+月[\d]+日)[\s+]([0-9][0-9,.]*[0-9])[\s+]([0-9][0-9,.]*[0-9])', "\n".join(jp_text_lines))
+					data_parsed = re.findall(fr'([\d]+月[\d]+日)[\s+]([0-9][0-9,.]*[0-9])[\s+]([0-9][0-9,.]*[0-9])', "\n".join(jp_text_lines))
 
 					for dat in data_parsed:
 						date_string = dat[0] + " " + str(self.submission_date.year)
@@ -250,7 +251,7 @@ class JPY_shares:
 			buyback_dates = (None, None, None, None)
 			logger.info(f"getting meeting date and buyback period")
 			jp_text_lines = list(filter(None, jp_text.split("\n")))
-			buyback_dates = re.findall(r'([\d]+年[\d]+月[\d]+日)', "\n".join(jp_text_lines))
+			buyback_dates = re.findall(fr'({self.date_regex})', "\n".join(jp_text_lines))
 			assert(3<len(buyback_dates)), "couldnt find enough dates in the text block"
 			for i in range(len(buyback_dates)):
 				buyback_dates[i] = jp_date_to_py_date(buyback_dates[i])

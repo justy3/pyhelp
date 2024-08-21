@@ -2,7 +2,8 @@ from xbrl_parser import *
 
 if __name__=="__main__":
 	# EXAMPLE
-	mypath = "/home/justy/private/capula/pyhelp/jpy_parser/data_XBRL/"
+	# mypath = "/home/justy/private/capula/pyhelp/jpy_parser/data_XBRL/"
+	mypath = "data_XBRL/"
 	xbrlfiles = [f for f in os.listdir(mypath) if f.endswith("_XBRL")]
 	# xbrlfiles = ["toyota_20231213_XBRL"]
 
